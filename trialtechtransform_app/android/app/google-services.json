@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "53588095305",
+    "project_id": "techtrialtransform",
+    "storage_bucket": "techtrialtransform.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53588095305:android:318611e3e4c81d2474ea98",
+        "android_client_info": {
+          "package_name": "com.example.trialtechtransform_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDu2ncVJECn-ieAX9cUw2XdtAVxQpNFYV8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
