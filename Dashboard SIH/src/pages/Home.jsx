@@ -31,9 +31,9 @@ const Home = () => {
               </button>
               <p className="mt-3">
                 <span className="text-lg font-semibold">{item.amount}</span>
-                <span className={`text-sm text-${item.pcColor} ml-2`}>
+                {/* <span className={`text-sm text-${item.pcColor} ml-2`}>
                   {item.percentage}
-                </span>
+                </span> */}
               </p>
               <p className="text-sm text-gray-400 mt-1">{item.title}</p>
             </div>
@@ -78,9 +78,9 @@ const Home = () => {
       </div>
 
       <div className="flex gap-10 m-4 flex-wrap justify-center">
-        <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg p-6 rounded-2xl">
+        {/* <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg p-6 rounded-2xl">
           <div className="flex justify-between items-center gap-2">
-            <p className="text-xl font-semibold">Recent Cases</p>
+            <p className="text-xl font-semibold">Madhepur District Court</p>
             <DropDown currentMode={currentMode} />
           </div>
           <div className="mt-10 w-72 md:w-400">
@@ -116,7 +116,7 @@ const Home = () => {
               />
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg p-6 rounded-2xl w-96 md:w-760">
           <div className="flex justify-between items-center gap-2 mb-10">
             <p className="text-xl font-semibold">Monthly UTP Cases</p>
