@@ -9,3 +9,17 @@
 <li>A virtual platform that allows undertrial prisoners and the support-persons to access the awareness of rights and various provisions of UTPs and thereby improving access to justice. 
 </li>
 </ul>
+
+<p>"We split the solution into three parts:
+<br>
+<b>>Legal Connect </bApp<b> <i>NyayYatra</i></b>: This app connects lawyers and people who need legal help (UTP). It lets you book appointments, get case updates, access legal resources, and offers rehabilitation support.
+  
+<br>
+<h2>link:</h2>
+
+<B>Dashboard</B> <i>NyaySanvad</i>: This tool helps authorities monitor and update the status of cases and services.
+<br>
+<h2>link:</h2>
+<b>Awareness Website</b> <i>Sadayev Satyamev</i>: This website gathers all information about rights and assistance available online."
+<h2>link:</h2>
+</p>
