@@ -704,7 +704,7 @@ export const earningData = [
     pcColor: 'red-600',
   },
   {
-    icon: <BsBoxSeam />,
+    icon: <MdOutlineSupervisorAccount />,
     amount: '1,68,627',
     percentage: '-0.4%',
     title: 'Bail Granted',
@@ -713,7 +713,7 @@ export const earningData = [
     pcColor: 'green-600',
   },
   {
-    icon: <FiBarChart />,
+    icon: <MdOutlineSupervisorAccount />,
     amount: '423,39',
     percentage: '+38%',
     title: 'Solved Cases',
@@ -2455,34 +2455,35 @@ export const scheduleData = [
 ];
 
 
+
 export const lineChartData = [
   [
-    { x: new Date(2005, 0, 1), y: 21 },
-    { x: new Date(2006, 0, 1), y: 24 },
-    { x: new Date(2007, 0, 1), y: 36 },
-    { x: new Date(2008, 0, 1), y: 38 },
-    { x: new Date(2009, 0, 1), y: 54 },
-    { x: new Date(2010, 0, 1), y: 57 },
-    { x: new Date(2011, 0, 1), y: 70 },
+    { x: new Date(2016, 0, 1), y: 21 },
+    { x: new Date(2017, 0, 1), y: 24 },
+    { x: new Date(2018, 0, 1), y: 36 },
+    { x: new Date(2019, 0, 1), y: 38 },
+    { x: new Date(2020, 0, 1), y: 54 },
+    { x: new Date(2021, 0, 1), y: 57 },
+    { x: new Date(2022, 0, 1), y: 70 },
   ],
   [
-    { x: new Date(2005, 0, 1), y: 28 },
-    { x: new Date(2006, 0, 1), y: 44 },
-    { x: new Date(2007, 0, 1), y: 48 },
-    { x: new Date(2008, 0, 1), y: 50 },
-    { x: new Date(2009, 0, 1), y: 66 },
-    { x: new Date(2010, 0, 1), y: 78 },
-    { x: new Date(2011, 0, 1), y: 84 },
+    { x: new Date(2016, 0, 1), y: 28 },
+    { x: new Date(2017, 0, 1), y: 44 },
+    { x: new Date(2018, 0, 1), y: 48 },
+    { x: new Date(2019, 0, 1), y: 50 },
+    { x: new Date(2020, 0, 1), y: 66 },
+    { x: new Date(2021, 0, 1), y: 78 },
+    { x: new Date(2022, 0, 1), y: 84 },
   ],
 
   [
-    { x: new Date(2005, 0, 1), y: 10 },
-    { x: new Date(2006, 0, 1), y: 20 },
-    { x: new Date(2007, 0, 1), y: 30 },
-    { x: new Date(2008, 0, 1), y: 39 },
-    { x: new Date(2009, 0, 1), y: 50 },
-    { x: new Date(2010, 0, 1), y: 70 },
-    { x: new Date(2011, 0, 1), y: 100 },
+    { x: new Date(2016, 0, 1), y: 10 },
+    { x: new Date(2017, 0, 1), y: 20 },
+    { x: new Date(2018, 0, 1), y: 30 },
+    { x: new Date(2019, 0, 1), y: 39 },
+    { x: new Date(2020, 0, 1), y: 50 },
+    { x: new Date(2021, 0, 1), y: 70 },
+    { x: new Date(2022, 0, 1), y: 100 },
   ],
 ];
 export const dropdownData = [
@@ -2508,35 +2509,29 @@ export const SparklineAreaData = [
 ];
 
 export const lineCustomSeries = [
-  {
-    dataSource: lineChartData[0],
+  { dataSource: lineChartData[0],
     xName: 'x',
     yName: 'y',
-    name: 'Germany',
+    name: 'Bihar',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
-    type: 'Line',
-  },
+    type: 'Line' },
 
-  {
-    dataSource: lineChartData[1],
+  { dataSource: lineChartData[1],
     xName: 'x',
     yName: 'y',
-    name: 'England',
+    name: 'Uttar Pradesh',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
-    type: 'Line',
-  },
+    type: 'Line' },
 
-  {
-    dataSource: lineChartData[2],
+  { dataSource: lineChartData[2],
     xName: 'x',
     yName: 'y',
-    name: 'India',
+    name: 'Jammu And Kashmir',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
-    type: 'Line',
-  },
+    type: 'Line' },
 ];
 
 export const pieChartData = [
@@ -2577,13 +2572,13 @@ export const ecomPieChartData = [
 
 export const stackedChartData = [
   [
-    { x: 'Jan', y: 111.1 },
-    { x: 'Feb', y: 127.3 },
-    { x: 'Mar', y: 143.4 },
-    { x: 'Apr', y: 159.9 },
-    { x: 'May', y: 159.9 },
-    { x: 'Jun', y: 159.9 },
-    { x: 'July', y: 159.9 },
+    { x: 'Bihar', y: 111.1 },
+    { x: 'UP', y: 127.3 },
+    { x: 'JK', y: 143.4 },
+    { x: 'Gujrat', y: 159.9 },
+    { x: 'Punjab', y: 159.9 },
+    { x: 'Rajasthan', y: 159.9 },
+    { x: 'Kerala', y: 159.9 },
   ],
   [
     { x: 'Jan', y: 111.1 },
@@ -2595,25 +2590,25 @@ export const stackedChartData = [
     { x: 'July', y: 159.9 },
   ],
 ];
-
 export const stackedCustomSeries = [
-  {
-    dataSource: stackedChartData[0],
+  { dataSource: stackedChartData[0],
     xName: 'x',
     yName: 'y',
-    name: 'Budget',
+    name: 'State Wise Distribution',
     type: 'StackingColumn',
     background: 'blue',
+
   },
 
-  {
-    dataSource: stackedChartData[1],
-    xName: 'x',
-    yName: 'y',
-    name: 'Expense',
-    type: 'StackingColumn',
-    background: 'red',
-  },
+  // { dataSource: stackedChartData[1],
+  //   xName: 'x',
+  //   yName: 'y',
+  //   name: 'Expense',
+  //   type: 'StackingColumn',
+  //   background: 'red',
+
+  // },
+
 ];
 
 export const stackedPrimaryXAxis = {
