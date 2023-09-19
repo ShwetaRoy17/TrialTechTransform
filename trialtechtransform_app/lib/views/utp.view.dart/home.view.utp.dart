@@ -13,6 +13,7 @@ import 'package:trialtechtransform_app/views/utp.view.dart/bottomscreen/law.utp.
 import 'package:trialtechtransform_app/views/utp.view.dart/bottomscreen/profile.utp.dart';
 import 'package:trialtechtransform_app/views/utp.view.dart/drawerscreen/bookedslot.dart';
 import 'package:trialtechtransform_app/views/utp.view.dart/drawerscreen/payment.history.dart';
+import 'package:trialtechtransform_app/views/utp.view.dart/drawerscreen/wallet.scn.dart';
 import 'package:trialtechtransform_app/views/utp.view.dart/home.bottom.dart';
 import 'package:trialtechtransform_app/views/utp.view.dart/utpservicesview/connect.lawyer.view.dart';
 import 'package:trialtechtransform_app/views/widgets/custom.widgets.dart';
@@ -76,9 +77,7 @@ class _HomeViewUTPState extends State<HomeViewUTP> {
     HomeWithBottom(),
     BookedSlotNavBar(),
     PaymentHistory(),
-    Center(
-      child: Text("wallet"),
-    )
+    WalletScreen()
   ];
 
   int _index = 0;

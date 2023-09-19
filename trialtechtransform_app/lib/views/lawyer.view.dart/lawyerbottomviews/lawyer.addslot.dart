@@ -318,7 +318,10 @@ class _AddSlotState extends State<AddSlot> {
                             String hr = cdate.hour.toString();
                             String min = cdate.minute.toString();
                             return Card(
-                              color: extraLightBlue,
+                              color:
+                                  (snapshot.data!.docs[index].get("occupied"))
+                                      ? Colors.green[200]
+                                      : extraLightBlue,
                               child: Padding(
                                 padding: EdgeInsets.symmetric(
                                     vertical: 10, horizontal: 10),
@@ -347,10 +350,42 @@ class _AddSlotState extends State<AddSlot> {
                                           .bodyMedium!
                                           .copyWith(fontSize: 18),
                                     ),
-                                    Icon(
-                                      Icons.delete,
-                                      color: Colors.red,
-                                    )
+                                    (snapshot.data!.docs[index].get("occupied"))
+                                        ? InkWell(
+                                            onTap: () {
+                                              LawyerService().cancelSlot(
+                                                  GlobalVars
+                                                      .auth.currentUser!.uid,
+                                                  snapshot.data!.docs[index].id,
+                                                  snapshot.data!.docs[index]
+                                                      .get("client"));
+                                              CustomWidget().snackBar(
+                                                  "You Cancelled the Slot",
+                                                  context,
+                                                  1000);
+                                            },
+                                            child: Icon(
+                                              Icons.close,
+                                              color: Colors.red,
+                                            ),
+                                          )
+                                        : InkWell(
+                                            onTap: () {
+                                              LawyerService().deleteSlot(
+                                                  GlobalVars
+                                                      .auth.currentUser!.uid,
+                                                  snapshot
+                                                      .data!.docs[index].id);
+                                              CustomWidget().snackBar(
+                                                  "Successfully Delelted Slot",
+                                                  context,
+                                                  1000);
+                                            },
+                                            child: Icon(
+                                              Icons.delete,
+                                              color: Colors.red,
+                                            ),
+                                          )
                                   ],
                                 ),
                               ),

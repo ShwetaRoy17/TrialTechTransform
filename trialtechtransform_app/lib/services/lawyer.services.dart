@@ -51,6 +51,15 @@ class LawyerService {
     return bookedSlot;
   }
 
+  void deleteSlot(String lawyeruid, String slotid) async {
+    await _store
+        .collection("lawyer")
+        .doc(lawyeruid)
+        .collection("slots")
+        .doc(slotid)
+        .delete();
+  }
+
   void cancelSlot(String lawyerID, String slotId, String utpId) async {
     await _store
         .collection("lawyer")

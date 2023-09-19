@@ -26,14 +26,29 @@ class _ConnectLawyerState extends State<ConnectLawyer> {
     // TODO: implement initState
     super.initState();
     SlotCubit slotCub = BlocProvider.of<SlotCubit>(context);
-    slotCub.fetchSlot();
+    slotCub.fetchSlot(currentDate);
   }
 
   String lawyerId = "";
-  DateTime currentDate = DateTime.now();
+  DateTime currentDate = DateTime(
+      DateTime.now().year, DateTime.now().month, DateTime.now().day, 0, 0);
+
+  void changeToDateNextDay() {
+    setState(() {
+      currentDate = currentDate.add(const Duration(days: 1));
+    });
+  }
+
+  void changeToPrevDay() {
+    setState(() {
+      currentDate = currentDate.add(const Duration(days: -1));
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
+    SlotCubit slotCub = BlocProvider.of<SlotCubit>(context);
+    slotCub.fetchSlot(currentDate);
     return Scaffold(
         appBar: AppBar(
           backgroundColor: darkBlue,
@@ -48,11 +63,50 @@ class _ConnectLawyerState extends State<ConnectLawyer> {
         ),
         body: Column(
           children: [
-            Container(
-              width: SizeConfig.width,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [Expanded(child: Text(currentDate.toString()))],
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+              child: Container(
+                padding:
+                    const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                decoration: BoxDecoration(
+                    color: greybg, borderRadius: BorderRadius.circular(10)),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    InkWell(
+                      onTap: () {
+                        changeToPrevDay();
+                      },
+                      child: Container(
+                        decoration: BoxDecoration(
+                            color: darkBlue,
+                            borderRadius: BorderRadius.circular(10)),
+                        child: const Icon(
+                          Icons.chevron_left_sharp,
+                          color: palletWhite,
+                          size: 50,
+                        ),
+                      ),
+                    ),
+                    Text(
+                        "${currentDate.day}-${currentDate.month}-${currentDate.year}"),
+                    InkWell(
+                      onTap: () {
+                        changeToDateNextDay();
+                      },
+                      child: Container(
+                        decoration: BoxDecoration(
+                            color: darkBlue,
+                            borderRadius: BorderRadius.circular(10)),
+                        child: const Icon(
+                          Icons.chevron_right_sharp,
+                          color: palletWhite,
+                          size: 50,
+                        ),
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
             StreamBuilder(
@@ -70,166 +124,172 @@ class _ConnectLawyerState extends State<ConnectLawyer> {
                                 child: ListView.builder(
                                   itemCount: UtpService.slotsList.length,
                                   itemBuilder: (context, index) {
-                                    return Padding(
-                                      padding: EdgeInsets.symmetric(
-                                          horizontal: 10, vertical: 10),
-                                      child: Card(
-                                        elevation: 4,
-                                        child: Padding(
-                                          padding: EdgeInsets.symmetric(
-                                              horizontal: 10, vertical: 10),
-                                          child: Column(
-                                            children: [
-                                              Row(
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment.center,
-                                                children: [
-                                                  Expanded(
-                                                    child: CircleAvatar(
-                                                      backgroundColor:
-                                                          extraLightBlue,
-                                                      child: SvgPicture.asset(
-                                                        "assets/svgs/lawyer.icon.svg",
-                                                        height: 60,
-                                                        width: 60,
+                                    if (UtpService.slotsList[index].date
+                                            .toDate()
+                                            .day ==
+                                        currentDate.day) {
+                                      return Padding(
+                                        padding: EdgeInsets.symmetric(
+                                            horizontal: 10, vertical: 10),
+                                        child: Card(
+                                          elevation: 4,
+                                          child: Padding(
+                                            padding: EdgeInsets.symmetric(
+                                                horizontal: 10, vertical: 10),
+                                            child: Column(
+                                              children: [
+                                                Row(
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment.center,
+                                                  children: [
+                                                    Expanded(
+                                                      child: CircleAvatar(
+                                                        backgroundColor:
+                                                            extraLightBlue,
+                                                        child: SvgPicture.asset(
+                                                          "assets/svgs/lawyer.icon.svg",
+                                                          height: 60,
+                                                          width: 60,
+                                                        ),
+                                                        radius: 50,
                                                       ),
-                                                      radius: 50,
                                                     ),
-                                                  ),
-                                                  SizedBox(
-                                                    width: 10,
-                                                  ),
-                                                  Expanded(
-                                                    flex: 2,
-                                                    child: SizedBox(
-                                                      child: Row(
-                                                        children: [
-                                                          StreamBuilder(
-                                                              stream: GlobalVars
-                                                                  .store
-                                                                  .collection(
-                                                                      "lawyer")
-                                                                  .doc(UtpService
-                                                                      .slotsList[
-                                                                          index]
-                                                                      .lawyerid)
-                                                                  .snapshots(),
-                                                              builder: (context,
-                                                                  snapshot2) {
-                                                                if (snapshot2
-                                                                    .hasData) {
-                                                                  return Row(
-                                                                    children: [
-                                                                      SizedBox(
-                                                                        child:
-                                                                            Column(
-                                                                          crossAxisAlignment:
-                                                                              CrossAxisAlignment.start,
-                                                                          children: [
-                                                                            Text(snapshot2.data!.get("name")),
-                                                                            Text(
-                                                                              snapshot2.data!.get("courtname"),
-                                                                              style: Theme.of(context).textTheme.bodyMedium!.copyWith(fontSize: 15),
-                                                                            ),
-                                                                            Text(
-                                                                              "Experience : " + snapshot2.data!.get("exp") + "yr",
-                                                                              style: Theme.of(context).textTheme.bodySmall!.copyWith(fontSize: 14),
-                                                                            ),
-                                                                          ],
+                                                    SizedBox(
+                                                      width: 10,
+                                                    ),
+                                                    Expanded(
+                                                      flex: 2,
+                                                      child: SizedBox(
+                                                        child: Row(
+                                                          children: [
+                                                            StreamBuilder(
+                                                                stream: GlobalVars
+                                                                    .store
+                                                                    .collection(
+                                                                        "lawyer")
+                                                                    .doc(UtpService
+                                                                        .slotsList[
+                                                                            index]
+                                                                        .lawyerid)
+                                                                    .snapshots(),
+                                                                builder: (context,
+                                                                    snapshot2) {
+                                                                  if (snapshot2
+                                                                      .hasData) {
+                                                                    return Row(
+                                                                      children: [
+                                                                        SizedBox(
+                                                                          child:
+                                                                              Column(
+                                                                            crossAxisAlignment:
+                                                                                CrossAxisAlignment.start,
+                                                                            children: [
+                                                                              Text(snapshot2.data!.get("name")),
+                                                                              Text(
+                                                                                snapshot2.data!.get("courtname"),
+                                                                                style: Theme.of(context).textTheme.bodyMedium!.copyWith(fontSize: 15),
+                                                                              ),
+                                                                              Text(
+                                                                                "Experience : " + snapshot2.data!.get("exp") + "yr",
+                                                                                style: Theme.of(context).textTheme.bodySmall!.copyWith(fontSize: 14),
+                                                                              ),
+                                                                              Text(
+                                                                                "Slot Timing : " + UtpService.slotsList[index].date.toDate().hour.toString() + " : " + UtpService.slotsList[index].date.toDate().minute.toString(),
+                                                                                style: Theme.of(context).textTheme.bodySmall!.copyWith(fontSize: 14),
+                                                                              ),
+                                                                            ],
+                                                                          ),
                                                                         ),
-                                                                      ),
-                                                                    ],
-                                                                  );
-                                                                }
+                                                                      ],
+                                                                    );
+                                                                  }
 
-                                                                if (snapshot2
-                                                                        .connectionState ==
-                                                                    ConnectionState
-                                                                        .none) {
-                                                                  return Center(
-                                                                    child: Text(
-                                                                        "None"),
-                                                                  );
-                                                                }
+                                                                  if (snapshot2
+                                                                          .connectionState ==
+                                                                      ConnectionState
+                                                                          .none) {
+                                                                    return Center(
+                                                                      child: Text(
+                                                                          "None"),
+                                                                    );
+                                                                  }
 
-                                                                return const Center(
-                                                                  child:
-                                                                      CircularProgressIndicator(
-                                                                    color:
-                                                                        darkBlue,
-                                                                  ),
-                                                                );
-                                                              })
-                                                        ],
-                                                      ),
-                                                    ),
-                                                  ),
-                                                  SizedBox(
-                                                    width: 10,
-                                                  ),
-                                                  Expanded(
-                                                      child: Container(
-                                                    decoration: BoxDecoration(
-                                                        borderRadius:
-                                                            BorderRadius
-                                                                .circular(20),
-                                                        color: extraLightBlue),
-                                                    child: Padding(
-                                                      padding:
-                                                          EdgeInsets.symmetric(
-                                                              vertical: 15),
-                                                      child: Center(
-                                                        child: Text(
-                                                          "Rs. ${UtpService.slotsList[index].slotAmt} ",
-                                                          style: Theme.of(
-                                                                  context)
-                                                              .textTheme
-                                                              .bodySmall!
-                                                              .copyWith(
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .bold),
+                                                                  return const Center(
+                                                                    child:
+                                                                        CircularProgressIndicator(
+                                                                      color:
+                                                                          darkBlue,
+                                                                    ),
+                                                                  );
+                                                                })
+                                                          ],
                                                         ),
                                                       ),
                                                     ),
-                                                  ))
-                                                ],
-                                              ),
-                                              SizedBox(
-                                                height: 15,
-                                              ),
-                                              SizedBox(
-                                                width: SizeConfig.width,
-                                                child: ElevatedButton(
-                                                    style: ButtonStyle(
-                                                        shape: MaterialStateProperty.all(
-                                                            RoundedRectangleBorder(
-                                                                borderRadius:
-                                                                    BorderRadius
-                                                                        .circular(
-                                                                            20))),
-                                                        backgroundColor:
-                                                            MaterialStateProperty
-                                                                .all(darkBlue)),
-                                                    onPressed: () {
-                                                      try {
-                                                        print(UtpService
-                                                            .slotsList[index]
-                                                            .lawyerid);
-                                                        print(UtpService
-                                                            .slotsList[index]
-                                                            .slotID);
-
-                                                        UtpService
-                                                                .slotsList[index]
-                                                                .clientID =
-                                                            snapshot.data!.id;
-                                                        print(UtpService
-                                                            .slotsList[index]
-                                                            .clientID);
-
-                                                        UtpService()
-                                                            .updateFirebaseForBookingSlot(
+                                                    SizedBox(
+                                                      width: 10,
+                                                    ),
+                                                    Expanded(
+                                                        child: Container(
+                                                      decoration: BoxDecoration(
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(20),
+                                                          color:
+                                                              extraLightBlue),
+                                                      child: Padding(
+                                                        padding: EdgeInsets
+                                                            .symmetric(
+                                                                vertical: 15),
+                                                        child: Center(
+                                                          child: Text(
+                                                            "Rs. ${UtpService.slotsList[index].slotAmt} ",
+                                                            style: Theme.of(
+                                                                    context)
+                                                                .textTheme
+                                                                .bodySmall!
+                                                                .copyWith(
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .bold),
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    ))
+                                                  ],
+                                                ),
+                                                SizedBox(
+                                                  height: 15,
+                                                ),
+                                                SizedBox(
+                                                  width: SizeConfig.width,
+                                                  child: ElevatedButton(
+                                                      style: ButtonStyle(
+                                                          shape: MaterialStateProperty.all(
+                                                              RoundedRectangleBorder(
+                                                                  borderRadius:
+                                                                      BorderRadius.circular(
+                                                                          20))),
+                                                          backgroundColor:
+                                                              MaterialStateProperty
+                                                                  .all(
+                                                                      darkBlue)),
+                                                      onPressed: () {
+                                                        try {
+                                                          UtpService
+                                                                  .slotsList[index]
+                                                                  .clientID =
+                                                              snapshot.data!.id;
+                                                          print(UtpService
+                                                              .slotsList[index]
+                                                              .clientID);
+                                                          if (snapshot.data!.get(
+                                                                  "balance") >=
+                                                              int.parse(UtpService
+                                                                  .slotsList[
+                                                                      index]
+                                                                  .slotAmt)) {
+                                                            UtpService().updateFirebaseForBookingSlot(
                                                                 UtpService
                                                                     .slotsList[
                                                                         index]
@@ -242,29 +302,37 @@ class _ConnectLawyerState extends State<ConnectLawyer> {
                                                                     .slotsList[
                                                                         index]
                                                                     .slotID);
-                                                        CustomWidget().snackBar(
-                                                            "Slot is Booked Successfully",
-                                                            context,
-                                                            1000);
-                                                      } catch (e) {
-                                                        CustomWidget().snackBar(
-                                                            e.toString(),
-                                                            context,
-                                                            1000);
-                                                      }
-                                                    },
-                                                    child: Padding(
-                                                        padding: EdgeInsets
-                                                            .symmetric(
-                                                                vertical: 20),
-                                                        child:
-                                                            Text("Book Slot"))),
-                                              )
-                                            ],
+                                                            CustomWidget().snackBar(
+                                                                "Slot is Booked Successfully",
+                                                                context,
+                                                                1000);
+                                                          } else {
+                                                            CustomWidget().snackBar(
+                                                                "Not Enough Balance",
+                                                                context,
+                                                                1000);
+                                                          }
+                                                        } catch (e) {
+                                                          CustomWidget()
+                                                              .snackBar(
+                                                                  e.toString(),
+                                                                  context,
+                                                                  1000);
+                                                        }
+                                                      },
+                                                      child: Padding(
+                                                          padding: EdgeInsets
+                                                              .symmetric(
+                                                                  vertical: 20),
+                                                          child: Text(
+                                                              "Book Slot"))),
+                                                )
+                                              ],
+                                            ),
                                           ),
                                         ),
-                                      ),
-                                    );
+                                      );
+                                    }
                                   },
                                 ),
                               );

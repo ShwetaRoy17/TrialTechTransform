@@ -9,7 +9,7 @@ class LawUtp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text("Law Utp"),
+        child: Text("Comming Soon !"),
       ),
     );
   }

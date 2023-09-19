@@ -8,12 +8,16 @@ import 'package:trialtechtransform_app/state_manage/state/slot.state.dart';
 class SlotCubit extends Cubit<SlotStates> {
   SlotCubit() : super(SlotInitialState());
 
-  void fetchSlot() async {
+  void fetchSlot(DateTime date) async {
     emit(FetchingSlotsStat());
 
     try {
+<<<<<<< HEAD
       List<SlotModel> lawyersId =
           await UtpService().fetchLawyers(DateTime.now());
+=======
+      List<SlotModel> lawyersId = await UtpService().fetchLawyers(date);
+>>>>>>> smsService
       emit(FetchedSlotsState(slots: lawyersId));
     } on FirebaseAuthException catch (e) {
       emit(ErrorInFetchedState(err: e.message.toString()));

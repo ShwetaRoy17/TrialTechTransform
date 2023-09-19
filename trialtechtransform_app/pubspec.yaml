@@ -46,6 +46,7 @@ dependencies:
   twilio_flutter: ^0.0.9
   upi_india: ^3.0.1
   flutter_upi: ^0.0.2
+  url_launcher: ^6.1.11
 
 dev_dependencies:
   flutter_test:
