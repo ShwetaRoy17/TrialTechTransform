@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:trialtechtransform_app/views/utp.view.dart/utpservicesview/case.proceeding.dart';
+import 'package:trialtechtransform_app/views/utp.view.dart/utpservicesview/ngo.view.dart';
+import 'package:trialtechtransform_app/views/utp.view.dart/utpservicesview/rehab.view.dart';
+import 'package:trialtechtransform_app/views/utp.view.dart/utpservicesview/utp.laws.dart';
 
 import '../../widgets/custom.widgets.dart';
 import '../utpservicesview/connect.lawyer.view.dart';
@@ -42,6 +46,18 @@ class HomeUTP extends StatelessWidget {
                     if (index == 0) {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => ConnectLawyer()));
+                    } else if (index == 2) {
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => UtpLaws()));
+                    } else if (index == 3) {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => CaseProceeding()));
+                    } else if (index == 4) {
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => NgoView()));
+                    } else if (index == 5) {
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => RehabView()));
                     }
                   });
                 })),

@@ -40,8 +40,8 @@ class UtpService {
         Timestamp dateOfSlot = j.get("date");
         String day = j.get("day");
         bool occupied = j.get("occupied");
-        if (dateOfSlot.toDate().isAfter(dateFilter) ||
-            dateOfSlot.toDate().isAtSameMomentAs(dateFilter)) {
+        if ((dateOfSlot.toDate().isAfter(dateFilter) ||
+            dateOfSlot.toDate().isAtSameMomentAs(dateFilter))) {
           slotsList.add(SlotModel(
               slotID: j.id,
               clientID: "",
