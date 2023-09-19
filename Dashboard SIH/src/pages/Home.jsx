@@ -62,10 +62,10 @@ const Home = () => {
                   color="white"
                   bgColor={currentColor}
                   text="Download Report"
-                  borderRadius="10px"
+                  borderRadius="10px" 
                 />
               </div>
-            </div>
+            </div> 
             <div>
               <Stacked currentMode={currentMode} width="320px" height="360px" />
             </div>
