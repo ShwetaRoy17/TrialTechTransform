@@ -45,3 +45,11 @@
 }
 
 /*--------------faq-------------*/
+
+.justify-text {
+  text-align: justify;
+}
+.button-align-bottom {
+  /* position: absolute; */
+  bottom: 20%;
+}
