@@ -70,6 +70,45 @@ class UtpService {
     return slotsList;
   }
 
+  Future<List<SlotModel>> fetchLawyersFilterDate(DateTime dateFilter) async {
+    availLawyer.clear();
+    lawyers.clear();
+    slotsList.clear();
+    QuerySnapshot<Map<String, dynamic>> alldocs =
+        await _store.collection("lawyer").get();
+
+    for (QueryDocumentSnapshot i in alldocs.docs) {
+      // lawyer uid
+      try {
+        QuerySnapshot querySnapshot = await i.reference
+            .collection("slots")
+            .where('date',
+                isGreaterThan: Timestamp.fromDate(dateFilter),
+                isLessThan: DateTime(dateFilter.year, dateFilter.month,
+                    dateFilter.day + 1, 0, 0))
+            .get();
+
+        // Iterate through the filtered documents
+        querySnapshot.docs.forEach((DocumentSnapshot document) {
+          print('Document ID: ${document.id}, Data: ${document.data()}');
+        });
+      } catch (e) {
+        print('Error filtering documents: $e');
+      }
+    }
+
+    // for (String i in availLawyer) {
+    //   DocumentSnapshot<Map<String, dynamic>> lawyerDetails =
+    //       await fetchLawyerDetailForUtp(i);
+    //   lawyers.add(LawyerModel(
+    //       lawyerUid: i.toString(),
+    //       name: lawyerDetails.data()!["name"],
+    //       phn: lawyerDetails.data()!["phone"]));
+    // }
+
+    return slotsList;
+  }
+
   Future<DocumentSnapshot<Map<String, dynamic>>> fetchLawyerDetailForUtp(
       String lawyerUid) async {
     DocumentSnapshot<Map<String, dynamic>> lawyerData =
