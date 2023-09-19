@@ -46,8 +46,13 @@ class AuthCubit extends Cubit<AuthState> {
             phn: user.user!.phoneNumber.toString(),
             role: role);
         if (create) {
-          await AuthService()
-              .updateFirestoreInfo(role, userModel.uid, userModel.phn, name);
+          if (role == "UnderTrial") {
+            await AuthService()
+                .updateFirestoreInfoUtp(userModel.uid, userModel.phn, name);
+          } else {
+            await AuthService()
+                .updateFirestoreInfoLawyer(userModel.uid, userModel.phn, name);
+          }
         }
 
         emit(AuthDoneState(user: userModel));

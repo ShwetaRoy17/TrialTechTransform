@@ -52,7 +52,6 @@ class _AddSlotState extends State<AddSlot> {
 
   String dropDownValue = "Monday";
   bool expand = true;
-  String dayValue = "Monday";
 
   List<String> list = <String>[
     'Monday',
@@ -63,6 +62,8 @@ class _AddSlotState extends State<AddSlot> {
     "Saturday",
     "Sunday"
   ];
+
+  TextEditingController amt = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -217,6 +218,25 @@ class _AddSlotState extends State<AddSlot> {
                                 }).toList(),
                               ),
                               SizedBox(
+                                height: 10,
+                              ),
+                              TextFormField(
+                                controller: amt,
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .bodyMedium!
+                                    .copyWith(
+                                        fontSize: 18, color: Colors.black),
+                                keyboardType: TextInputType.number,
+                                decoration: InputDecoration(
+                                    hintText: "Amount",
+                                    filled: true,
+                                    fillColor: greybg,
+                                    border: OutlineInputBorder(
+                                        borderRadius: BorderRadius.circular(10),
+                                        borderSide: BorderSide.none)),
+                              ),
+                              SizedBox(
                                 height: 20,
                               ),
                               SizedBox(
@@ -226,12 +246,6 @@ class _AddSlotState extends State<AddSlot> {
                                         backgroundColor:
                                             MaterialStateProperty.all(pYellow)),
                                     onPressed: () {
-                                      print(DateTime(
-                                          selectedDate.year,
-                                          selectedDate.month,
-                                          selectedDate.day,
-                                          selectedTime.hour,
-                                          selectedTime.minute));
                                       LawyerService().addSlot(
                                           DateTime(
                                               selectedDate.year,
@@ -239,7 +253,8 @@ class _AddSlotState extends State<AddSlot> {
                                               selectedDate.day,
                                               selectedTime.hour,
                                               selectedTime.minute),
-                                          dropDownValue);
+                                          dropDownValue,
+                                          amt.text.toString());
                                       CustomWidget()
                                           .snackBar("Slot Added", context, 500);
                                       setState(() {

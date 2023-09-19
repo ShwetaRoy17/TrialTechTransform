@@ -73,6 +73,30 @@ class _LawyerHomeState extends State<LawyerHome> {
           onTap: _onItemTapped,
         ),
         appBar: AppBar(
+          title: (_selectedIndex == 0)
+              ? Text(
+                  "Home",
+                  style: Theme.of(context)
+                      .textTheme
+                      .bodySmall!
+                      .copyWith(color: palletWhite),
+                )
+              : (_selectedIndex == 1)
+                  ? Text(
+                      "Clients",
+                      style: Theme.of(context)
+                          .textTheme
+                          .bodySmall!
+                          .copyWith(color: palletWhite),
+                    )
+                  : Text(
+                      "Lawyer Profile",
+                      style: Theme.of(context)
+                          .textTheme
+                          .bodySmall!
+                          .copyWith(color: palletWhite),
+                    ),
+          centerTitle: true,
           backgroundColor: darkBlue,
           actions: [
             Padding(

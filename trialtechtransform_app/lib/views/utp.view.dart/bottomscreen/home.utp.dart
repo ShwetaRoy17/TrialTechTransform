@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:trialtechtransform_app/views/utp.view.dart/utpservices/connect.lawyer.view.dart';
 
 import '../../widgets/custom.widgets.dart';
 import '../utpservicesview/connect.lawyer.view.dart';

@@ -36,11 +36,22 @@ class AuthService {
     return false;
   }
 
-  updateFirestoreInfo(String coll, String uid, String phn, String name) async {
+  updateFirestoreInfoUtp(String uid, String phn, String name) async {
     await _auth.currentUser!.updateDisplayName(name);
-    await _store
-        .collection(coll)
-        .doc(uid)
-        .set({"phone": phn, "name": name, "bookedslot": false});
+    await _store.collection("UnderTrial").doc(uid).set(
+        {"phone": phn, "name": name, "bookedslot": false, "balance": 0},
+        SetOptions(merge: true));
+  }
+
+  updateFirestoreInfoLawyer(String uid, String phn, String name) async {
+    await _auth.currentUser!.updateDisplayName(name);
+    await _store.collection("lawyer").doc(uid).set({
+      "phone": phn,
+      "name": name,
+      "email": "",
+      "exp": "",
+      "practiseArea": "",
+      "LawSchool": ""
+    }, SetOptions(merge: true));
   }
 }

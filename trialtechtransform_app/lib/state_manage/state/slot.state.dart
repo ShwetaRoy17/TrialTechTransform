@@ -1,5 +1,7 @@
 import 'package:trialtechtransform_app/models/lawyer.model.dart';
 
+import '../../models/slot.model.dart';
+
 class SlotStates {}
 
 class FetchingSlotsStat extends SlotStates {}
@@ -12,8 +14,8 @@ class ErrorInFetchedState extends SlotStates {
 }
 
 class FetchedSlotsState extends SlotStates {
-  List<LawyerModel> lawyerId;
-  FetchedSlotsState({required this.lawyerId});
+  List<SlotModel> slots;
+  FetchedSlotsState({required this.slots});
 }
 
 class SlotInitialState extends SlotStates {}
