@@ -193,6 +193,10 @@ class _ConnectLawyerState extends State<ConnectLawyer> {
                                                                                 "Experience : " + snapshot2.data!.get("exp") + "yr",
                                                                                 style: Theme.of(context).textTheme.bodySmall!.copyWith(fontSize: 14),
                                                                               ),
+                                                                              Text(
+                                                                                "Slot Timing : " + UtpService.slotsList[index].date.toDate().hour.toString() + " : " + UtpService.slotsList[index].date.toDate().minute.toString(),
+                                                                                style: Theme.of(context).textTheme.bodySmall!.copyWith(fontSize: 14),
+                                                                              ),
                                                                             ],
                                                                           ),
                                                                         ),
@@ -272,13 +276,6 @@ class _ConnectLawyerState extends State<ConnectLawyer> {
                                                                       darkBlue)),
                                                       onPressed: () {
                                                         try {
-                                                          print(UtpService
-                                                              .slotsList[index]
-                                                              .lawyerid);
-                                                          print(UtpService
-                                                              .slotsList[index]
-                                                              .slotID);
-
                                                           UtpService
                                                                   .slotsList[index]
                                                                   .clientID =
@@ -286,25 +283,35 @@ class _ConnectLawyerState extends State<ConnectLawyer> {
                                                           print(UtpService
                                                               .slotsList[index]
                                                               .clientID);
-
-                                                          UtpService()
-                                                              .updateFirebaseForBookingSlot(
-                                                                  UtpService
-                                                                      .slotsList[
-                                                                          index]
-                                                                      .lawyerid,
-                                                                  UtpService
-                                                                      .slotsList[
-                                                                          index]
-                                                                      .clientID,
-                                                                  UtpService
-                                                                      .slotsList[
-                                                                          index]
-                                                                      .slotID);
-                                                          CustomWidget().snackBar(
-                                                              "Slot is Booked Successfully",
-                                                              context,
-                                                              1000);
+                                                          if (snapshot.data!.get(
+                                                                  "balance") >=
+                                                              int.parse(UtpService
+                                                                  .slotsList[
+                                                                      index]
+                                                                  .slotAmt)) {
+                                                            UtpService().updateFirebaseForBookingSlot(
+                                                                UtpService
+                                                                    .slotsList[
+                                                                        index]
+                                                                    .lawyerid,
+                                                                UtpService
+                                                                    .slotsList[
+                                                                        index]
+                                                                    .clientID,
+                                                                UtpService
+                                                                    .slotsList[
+                                                                        index]
+                                                                    .slotID);
+                                                            CustomWidget().snackBar(
+                                                                "Slot is Booked Successfully",
+                                                                context,
+                                                                1000);
+                                                          } else {
+                                                            CustomWidget().snackBar(
+                                                                "Not Enough Balance",
+                                                                context,
+                                                                1000);
+                                                          }
                                                         } catch (e) {
                                                           CustomWidget()
                                                               .snackBar(

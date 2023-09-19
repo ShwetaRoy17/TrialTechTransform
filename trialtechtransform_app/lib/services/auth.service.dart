@@ -50,6 +50,7 @@ class AuthService {
       "name": name,
       "email": "",
       "exp": "",
+      "courtname": "",
       "practiseArea": "",
       "LawSchool": ""
     }, SetOptions(merge: true));
