@@ -12,14 +12,21 @@
 
 <p>"We split the solution into three parts:
 <br>
-<b>>Legal Connect </bApp<b> <i>NyayYatra</i></b>: This app connects lawyers and people who need legal help (UTP). It lets you book appointments, get case updates, access legal resources, and offers rehabilitation support.
+<b>>>Legal Connect </bApp<b> <i>NyayYatra</i></b>: This app connects lawyers and people who need legal help (UTP). It lets you book appointments, get case updates, access legal resources, and offers rehabilitation support.
   
 <br>
-<h2>link:</h2>
+<h2><a href="https://nyaysanvad.netlify.app/">link:NyayYatra</a></h2>
+login as 
+admin
+user id:g01
+password:general123
 
 <B>Dashboard</B> <i>NyaySanvad</i>: This tool helps authorities monitor and update the status of cases and services.
 <br>
-<h2>link:</h2>
+<h2><a href="">link:</a></h2>
 <b>Awareness Website</b> <i>Sadayev Satyamev</i>: This website gathers all information about rights and assistance available online."
-<h2>link:</h2>
+<h2><a href="">link:</a></h2>
 </p>
+
+<h3>Demo Video Link</h3>
+<h2><a href="">link:</a></h2>
