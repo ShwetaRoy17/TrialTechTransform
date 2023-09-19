@@ -14,7 +14,6 @@ class SlotCubit extends Cubit<SlotStates> {
     try {
       List<SlotModel> lawyersId =
           await UtpService().fetchLawyers(DateTime.now());
-      print(lawyersId[0].slotID);
       emit(FetchedSlotsState(slots: lawyersId));
     } on FirebaseAuthException catch (e) {
       emit(ErrorInFetchedState(err: e.message.toString()));
