@@ -1034,7 +1034,7 @@ export const customersData = [
   {
     CustomerID: 1004,
 
-    CustomerName: 'Christopher Jamil',
+    CustomerName: 'Rahul Sharma',
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
     Status: 'Bailed and Released',
@@ -1047,8 +1047,8 @@ export const customersData = [
   {
     CustomerID: 1005,
 
-    CustomerName: 'Michael',
-    CustomerEmail: 'michael@gmail.com',
+    CustomerName: 'Yash Kumar',
+    CustomerEmail: 'Yash Kumar@gmail.com',
     ProjectName: 'Weekly WP Theme',
     Status: 'Prisoned',
     CustomerImage: avatar2,
@@ -1099,7 +1099,7 @@ export const customersData = [
   {
     CustomerID: 1009,
 
-    CustomerName: 'Christopher Jamil',
+    CustomerName: 'Rahul Sharma',
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
     Status: 'Bailed and Released',
@@ -1112,8 +1112,8 @@ export const customersData = [
   {
     CustomerID: 1010,
 
-    CustomerName: 'Michael',
-    CustomerEmail: 'michael@gmail.com',
+    CustomerName: 'Yash Kumar',
+    CustomerEmail: 'Yash Kumar@gmail.com',
     ProjectName: 'Weekly WP Theme',
     Status: 'Prisoned',
     CustomerImage: avatar2,
@@ -1151,7 +1151,7 @@ export const customersData = [
   {
     CustomerID: 1013,
 
-    CustomerName: 'Andrew McDownland',
+    CustomerName: 'Divyam Jain',
     CustomerEmail: 'andrew@gmail.com',
     ProjectName: 'Real Homes WP Theme',
     Status: 'Granted but not released',
@@ -1164,7 +1164,7 @@ export const customersData = [
   {
     CustomerID: 1014,
 
-    CustomerName: 'Christopher Jamil',
+    CustomerName: 'Rahul Sharma',
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
     Status: 'Bailed and Released',
@@ -1177,8 +1177,8 @@ export const customersData = [
   {
     CustomerID: 1015,
 
-    CustomerName: 'Michael',
-    CustomerEmail: 'michael@gmail.com',
+    CustomerName: 'Yash Kumar',
+    CustomerEmail: 'Yash Kumar@gmail.com',
     ProjectName: 'Weekly WP Theme',
     Status: 'Prisoned',
     CustomerImage: avatar2,
@@ -1216,7 +1216,7 @@ export const customersData = [
   {
     CustomerID: 1018,
 
-    CustomerName: 'Andrew McDownland',
+    CustomerName: 'Divyam Jain',
     CustomerEmail: 'andrew@gmail.com',
     ProjectName: 'Real Homes WP Theme',
     Status: 'Granted but not released',
@@ -1229,7 +1229,7 @@ export const customersData = [
   {
     CustomerID: 1019,
 
-    CustomerName: 'Christopher Jamil',
+    CustomerName: 'Rahul Sharma',
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
     Status: 'Released',
@@ -1242,8 +1242,8 @@ export const customersData = [
   {
     CustomerID: 1020,
 
-    CustomerName: 'Michael',
-    CustomerEmail: 'michael@gmail.com',
+    CustomerName: 'Yash Kumar',
+    CustomerEmail: 'Yash Kumar@gmail.com',
     ProjectName: 'Weekly WP Theme',
     Status: 'Prisoned',
     CustomerImage: avatar2,
@@ -1266,7 +1266,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
+    Name: 'Harsh Kaushik',
     Title: 'Gujrat High Court',
     HireDate: '01/02/2021',
     Country: 'Gujrat',
@@ -1275,7 +1275,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 3,
-    Name: 'Iulia Albu',
+    Name: 'Faizan Hussain',
     Title: 'Orissa High Court',
     HireDate: '01/02/2021',
     Country: 'Orissa',
@@ -1284,7 +1284,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 4,
-    Name: 'Chirag',
+    Name: 'Shweta Roy',
     Title: 'Patna High Court',
     HireDate: '01/02/2021',
     Country: 'Bihar',
@@ -1311,7 +1311,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
+    Name: 'Harsh Kaushik',
     Title: 'Gujrat High Court',
     HireDate: '01/02/2021',
     Country: 'Gujrat',
@@ -1320,7 +1320,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 3,
-    Name: 'Iulia Albu',
+    Name: 'Faizan Hussain',
     Title: 'Orissa High Court',
     HireDate: '01/02/2021',
     Country: 'Orissa',
@@ -1329,7 +1329,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 4,
-    Name: 'Chirag',
+    Name: 'Shweta Roy',
     Title: 'Patna High Court',
     HireDate: '01/02/2021',
     Country: 'Bihar',
@@ -1356,7 +1356,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
+    Name: 'Harsh Kaushik',
     Title: 'Gujrat High Court',
     HireDate: '01/02/2021',
     Country: 'Gujrat',
@@ -1365,7 +1365,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 3,
-    Name: 'Iulia Albu',
+    Name: 'Faizan Hussain',
     Title: 'Orissa High Court',
     HireDate: '01/02/2021',
     Country: 'Orissa',
@@ -1374,7 +1374,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 4,
-    Name: 'Chirag',
+    Name: 'Shweta Roy',
     Title: 'Patna High Court',
     HireDate: '01/02/2021',
     Country: 'Bihar',
@@ -1401,7 +1401,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
+    Name: 'Harsh Kaushik',
     Title: 'Gujrat High Court',
     HireDate: '01/02/2021',
     Country: 'Gujrat',
@@ -1410,7 +1410,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 3,
-    Name: 'Iulia Albu',
+    Name: 'Faizan Hussain',
     Title: 'Orissa High Court',
     HireDate: '01/02/2021',
     Country: 'Orissa',
@@ -1419,7 +1419,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 4,
-    Name: 'Chirag',
+    Name: 'Shweta Roy',
     Title: 'Patna High Court',
     HireDate: '01/02/2021',
     Country: 'Bihar',
@@ -1446,7 +1446,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
+    Name: 'Harsh Kaushik',
     Title: 'Gujrat High Court',
     HireDate: '01/02/2021',
     Country: 'Gujrat',
@@ -1455,7 +1455,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 3,
-    Name: 'Iulia Albu',
+    Name: 'Faizan Hussain',
     Title: 'Orissa High Court',
     HireDate: '01/02/2021',
     Country: 'Orissa',
@@ -1464,7 +1464,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 4,
-    Name: 'Chirag',
+    Name: 'Shweta Roy',
     Title: 'Patna High Court',
     HireDate: '01/02/2021',
     Country: 'Bihar',
@@ -1491,7 +1491,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
+    Name: 'Harsh Kaushik',
     Title: 'Gujrat High Court',
     HireDate: '01/02/2021',
     Country: 'Gujrat',
@@ -1500,7 +1500,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 3,
-    Name: 'Iulia Albu',
+    Name: 'Faizan Hussain',
     Title: 'Orissa High Court',
     HireDate: '01/02/2021',
     Country: 'Orissa',
@@ -1509,7 +1509,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 4,
-    Name: 'Chirag',
+    Name: 'Shweta Roy',
     Title: 'Patna High Court',
     HireDate: '01/02/2021',
     Country: 'Bihar',
@@ -2600,14 +2600,14 @@ export const stackedCustomSeries = [
 
   },
 
-  // { dataSource: stackedChartData[1],
-  //   xName: 'x',
-  //   yName: 'y',
-  //   name: 'Expense',
-  //   type: 'StackingColumn',
-  //   background: 'red',
+  { dataSource: stackedChartData[1],
+    xName: 'x',
+    yName: 'y',
+    name: 'Expense',
+    type: 'StackingColumn',
+    background: 'red',
 
-  // },
+  },
 
 ];
 
@@ -2700,10 +2700,10 @@ export const kanbanData = [
     Priority: 'Normal',
     Tags: 'Undertrial, Health',
     Estimate: 5.0,
-    Assignee: 'Michael Wilson',
+    Assignee: 'Yash Kumar Wilson',
     RankId: 1,
     Color: '#E64A19',
-    ClassName: 'e-bug, e-normal, e-michael-wilson',
+    ClassName: 'e-bug, e-normal, e-Yash Kumar-wilson',
   },
   {
     Id: 'Task 6',
