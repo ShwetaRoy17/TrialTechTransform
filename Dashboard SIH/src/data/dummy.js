@@ -1,7 +1,22 @@
 import React from 'react';
-import { AiOutlineCalendar, AiOutlineHome, AiOutlineFileSearch } from 'react-icons/ai';
-import { FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
-import { BsKanban, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
+import {
+  AiOutlineCalendar,
+  AiOutlineHome,
+  AiOutlineFileSearch,
+} from 'react-icons/ai';
+import {
+  FiBarChart,
+  FiCreditCard,
+  FiStar,
+  FiShoppingCart,
+} from 'react-icons/fi';
+import {
+  BsKanban,
+  BsBoxSeam,
+  BsCurrencyDollar,
+  BsShield,
+  BsChatLeft,
+} from 'react-icons/bs';
 import { IoMdContacts } from 'react-icons/io';
 import { MdOutlineSupervisorAccount } from 'react-icons/md';
 // import { HiOutlineRefresh } from 'react-icons/hi';
@@ -40,22 +55,30 @@ export const gridOrderStatus = (props) => (
 );
 
 export const kanbanGrid = [
-  { headerText: 'To Do',
+  {
+    headerText: 'To Do',
     keyField: 'Open',
-    allowToggle: true },
+    allowToggle: true,
+  },
 
-  { headerText: 'In Progress',
+  {
+    headerText: 'In Progress',
     keyField: 'InProgress',
-    allowToggle: true },
+    allowToggle: true,
+  },
 
-  { headerText: 'Testing',
+  {
+    headerText: 'Testing',
     keyField: 'Testing',
     allowToggle: true,
-    isExpanded: false },
+    isExpanded: false,
+  },
 
-  { headerText: 'Done',
+  {
+    headerText: 'Done',
     keyField: 'Close',
-    allowToggle: true },
+    allowToggle: true,
+  },
 ];
 const gridEmployeeProfile = (props) => (
   <div className="flex items-center gap-2">
@@ -77,42 +100,46 @@ const gridEmployeeCountry = (props) => (
 export const EditorData = () => (
   <div>
     <h3>
-      Try React
-      React has been designed from the start for gradual adoption, and you can use as little or as much React as you need. Whether you want to get a taste of React, add some interactivity to a simple HTML page, or start a complex React-powered app, the links in this section will help you get started.
-
-      Online Playgrounds
-      If you’re interested in playing around with React, you can use an online code playground. Try a Hello World template on CodePen, CodeSandbox, or Stackblitz.
-
-      If you prefer to use your own text editor, you can also download this HTML file, edit it, and open it from the local filesystem in your browser. It does a slow runtime code transformation, so we’d only recommend using this for simple demos.
-
-      Add React to a Website
-      You can add React to an HTML page in one minute. You can then either gradually expand its presence, or keep it contained to a few dynamic widgets.
-
-      Create a New React App
-      When starting a React project, a simple HTML page with script tags might still be the best option. It only takes a minute to set up!
-
-      As your application grows, you might want to consider a more integrated setup. There are several JavaScript toolchains we recommend for larger applications. Each of them can work with little to no configuration and lets you take full advantage of the rich React ecosystem. Learn how.
-
-      Learn React
-      People come to React from different backgrounds and with different learning styles. Whether you prefer a more theoretical or a practical approach, we hope you’ll find this section helpful.
-
-      If you prefer to learn by doing, start with our practical tutorial.
-      If you prefer to learn concepts step by step, start with our guide to main concepts.
-      Like any unfamiliar technology, React does have a learning curve. With practice and some patience, you will get the hang of it.
-
-      First Examples
-      The React homepage contains a few small React examples with a live editor. Even if you don’t know anything about React yet, try changing their code and see how it affects the result.
-
-      React for Beginners
-      If you feel that the React documentation goes at a faster pace than you’re comfortable with, check out this overview of React by Tania Rascia. It introduces the most important React concepts in a detailed, beginner-friendly way. Once you’re done, give the documentation another try!
-
-      React for Designers
-      If you’re coming from a design background, these resources are a great place to get started.
-
-      JavaScript Resources
-      The React documentation assumes some familiarity with programming in the JavaScript language. You don’t have to be an expert, but it’s harder to learn both React and JavaScript at the same time.
-
-      We recommend going through this JavaScript overview to check your knowledge level. It will take you between 30 minutes and an hour but you will feel more confident learning React.
+      Try React React has been designed from the start for gradual adoption, and
+      you can use as little or as much React as you need. Whether you want to
+      get a taste of React, add some interactivity to a simple HTML page, or
+      start a complex React-powered app, the links in this section will help you
+      get started. Online Playgrounds If you’re interested in playing around
+      with React, you can use an online code playground. Try a Hello World
+      template on CodePen, CodeSandbox, or Stackblitz. If you prefer to use your
+      own text editor, you can also download this HTML file, edit it, and open
+      it from the local filesystem in your browser. It does a slow runtime code
+      transformation, so we’d only recommend using this for simple demos. Add
+      React to a Website You can add React to an HTML page in one minute. You
+      can then either gradually expand its presence, or keep it contained to a
+      few dynamic widgets. Create a New React App When starting a React project,
+      a simple HTML page with script tags might still be the best option. It
+      only takes a minute to set up! As your application grows, you might want
+      to consider a more integrated setup. There are several JavaScript
+      toolchains we recommend for larger applications. Each of them can work
+      with little to no configuration and lets you take full advantage of the
+      rich React ecosystem. Learn how. Learn React People come to React from
+      different backgrounds and with different learning styles. Whether you
+      prefer a more theoretical or a practical approach, we hope you’ll find
+      this section helpful. If you prefer to learn by doing, start with our
+      practical tutorial. If you prefer to learn concepts step by step, start
+      with our guide to main concepts. Like any unfamiliar technology, React
+      does have a learning curve. With practice and some patience, you will get
+      the hang of it. First Examples The React homepage contains a few small
+      React examples with a live editor. Even if you don’t know anything about
+      React yet, try changing their code and see how it affects the result.
+      React for Beginners If you feel that the React documentation goes at a
+      faster pace than you’re comfortable with, check out this overview of React
+      by Tania Rascia. It introduces the most important React concepts in a
+      detailed, beginner-friendly way. Once you’re done, give the documentation
+      another try! React for Designers If you’re coming from a design
+      background, these resources are a great place to get started. JavaScript
+      Resources The React documentation assumes some familiarity with
+      programming in the JavaScript language. You don’t have to be an expert,
+      but it’s harder to learn both React and JavaScript at the same time. We
+      recommend going through this JavaScript overview to check your knowledge
+      level. It will take you between 30 minutes and an hour but you will feel
+      more confident learning React.
     </h3>
   </div>
 );
@@ -132,7 +159,10 @@ const customerGridImage = (props) => (
 
 const customerGridStatus = (props) => (
   <div className="flex gap-2 justify-center items-center text-gray-700 capitalize">
-    <p style={{ background: props.StatusBg }} className="rounded-full h-3 w-3" />
+    <p
+      style={{ background: props.StatusBg }}
+      className="rounded-full h-3 w-3"
+    />
     <p>{props.Status}</p>
   </div>
 );
@@ -153,7 +183,6 @@ export const areaPrimaryYAxis = {
   majorTickLines: { width: 0 },
   minorTickLines: { width: 0 },
   labelStyle: { color: 'gray' },
-
 };
 export const barPrimaryXAxis = {
   valueType: 'Category',
@@ -214,7 +243,6 @@ export const areaCustomSeries = [
     opacity: '0.8',
     type: 'SplineArea',
     width: '2',
-
   },
   {
     dataSource: areaChartData[1],
@@ -319,21 +347,26 @@ export const colorMappingData = [
 ];
 
 export const rangeColorMapping = [
-  { label: '1°C to 10°C',
+  {
+    label: '1°C to 10°C',
     start: '1',
     end: '10',
-    colors: colorMappingData[1] },
+    colors: colorMappingData[1],
+  },
 
-  { label: '11°C to 20°C',
+  {
+    label: '11°C to 20°C',
     start: '11',
     end: '20',
-    colors: colorMappingData[2] },
+    colors: colorMappingData[2],
+  },
 
-  { label: '21°C to 30°C',
+  {
+    label: '21°C to 30°C',
     start: '21',
     end: '30',
-    colors: colorMappingData[3] },
-
+    colors: colorMappingData[3],
+  },
 ];
 
 export const ColorMappingPrimaryXAxis = {
@@ -389,20 +422,24 @@ export const LinePrimaryYAxis = {
 
 export const customersGrid = [
   { type: 'checkbox', width: '50' },
-  { headerText: "Prisoner's name",
+  {
+    headerText: "Prisoner' name",
     width: '150',
     template: customerGridImage,
-    textAlign: 'Center' },
+    textAlign: 'Center',
+  },
   // { field: 'ProjectName',
   //   headerText: 'Project Name',
   //   width: '150',
   //   textAlign: 'Center' },
-  { field: 'Status',
+  {
+    field: 'Status',
     headerText: 'Status',
     width: '130',
     format: 'yMd',
     textAlign: 'Center',
-    template: customerGridStatus },
+    template: customerGridStatus,
+  },
   // {
   //   field: 'Weeks',
   //   headerText: 'Weeks',
@@ -415,58 +452,64 @@ export const customersGrid = [
   //   format: 'yMd',
   //   textAlign: 'Center' },
 
-  { field: 'Location',
+  {
+    field: 'Location',
     headerText: 'Courtroom',
     width: '150',
-    textAlign: 'Center' },
+    textAlign: 'Center',
+  },
 
-  { field: 'CustomerID',
+  {
+    field: 'CustomerID',
     headerText: 'UTP ID',
     width: '120',
     textAlign: 'Center',
     isPrimaryKey: true,
   },
-
 ];
 
-
-
 export const employeesGrid = [
-
-  { field: 'EmployeeID',
+  {
+    field: 'EmployeeID',
     headerText: 'Lawyer ID',
     width: '125',
-    textAlign: 'Center' },
+    textAlign: 'Center',
+  },
 
-  { headerText: 'Lawyer Name' ,
+  {
+    headerText: 'Lawyer Name',
     width: '150',
     template: gridEmployeeProfile,
-    textAlign: 'Center' },
-    
-  { field: 'Name',
+    textAlign: 'Center',
+  },
+
+  {
+    field: 'Name',
     headerText: '',
     width: '0',
     textAlign: 'Center',
   },
-  { field: 'Title',
+  {
+    field: 'Title',
     headerText: 'Courtroom',
     width: '170',
     textAlign: 'Center',
   },
-  { headerText: 'Location',
+  {
+    headerText: 'Location',
     width: '120',
     textAlign: 'Center',
-    template: gridEmployeeCountry },
+    template: gridEmployeeCountry,
+  },
 
-  { field: 'HireDate',
+  {
+    field: 'HireDate',
     headerText: 'Hire Date',
     width: '135',
     format: 'yMd',
-    textAlign: 'Center' },
-
+    textAlign: 'Center',
+  },
 ];
-
-
 
 export const links1 = [
   {
@@ -560,7 +603,6 @@ export const links2 = [
   },
 ];
 
-
 export const links3 = [
   {
     title: 'Local Authority Dashboard',
@@ -603,25 +645,21 @@ export const links3 = [
   },
 ];
 
-
 export const cartData = [
   {
-    image:
-      product5,
+    image: product5,
     name: 'butterscotch ice-cream',
     category: 'Milk product',
     price: '$250',
   },
   {
-    image:
-      product6,
+    image: product6,
     name: 'Supreme fresh tomato',
     category: 'Vegetable Item',
     price: '$450',
   },
   {
-    image:
-      product7,
+    image: product7,
     name: 'Red color candy',
     category: 'Food Item',
     price: '$190',
@@ -630,29 +668,25 @@ export const cartData = [
 
 export const chatData = [
   {
-    image:
-      avatar2,
+    image: avatar2,
     message: 'Roman Joined the Team!',
     desc: 'Congratulate him',
     time: '9:08 AM',
   },
   {
-    image:
-      avatar3,
+    image: avatar3,
     message: 'New message received',
     desc: 'Salma sent you new message',
     time: '11:56 AM',
   },
   {
-    image:
-      avatar4,
+    image: avatar4,
     message: 'New Payment received',
     desc: 'Check your earnings',
     time: '4:39 AM',
   },
   {
-    image:
-      avatar,
+    image: avatar,
     message: 'Jolly completed tasks',
     desc: 'Assign her new tasks',
     time: '1:12 AM',
@@ -670,7 +704,7 @@ export const earningData = [
     pcColor: 'red-600',
   },
   {
-    icon: <BsBoxSeam />,
+    icon: <MdOutlineSupervisorAccount />,
     amount: '1,68,627',
     percentage: '-0.4%',
     title: 'Bail Granted',
@@ -679,7 +713,7 @@ export const earningData = [
     pcColor: 'green-600',
   },
   {
-    icon: <FiBarChart />,
+    icon: <MdOutlineSupervisorAccount />,
     amount: '423,39',
     percentage: '+38%',
     title: 'Solved Cases',
@@ -779,8 +813,7 @@ export const weeklyStats = [
 
 export const productsPerformance = [
   {
-    image:
-      product5,
+    image: product5,
     title: 'Is it good butterscotch ice-cream?',
     desc: 'Ice-Cream, Milk, Powder',
     rating: 'Good',
@@ -788,8 +821,7 @@ export const productsPerformance = [
     earningAmount: '$546,000',
   },
   {
-    image:
-      product6,
+    image: product6,
     title: 'Supreme fresh tomato available',
     desc: 'Market, Mall',
     rating: 'Excellent',
@@ -797,8 +829,7 @@ export const productsPerformance = [
     earningAmount: '$780,000',
   },
   {
-    image:
-      product7,
+    image: product7,
     title: 'Red color candy from Gucci',
     desc: 'Chocolate, Yummy',
     rating: 'Average',
@@ -806,8 +837,7 @@ export const productsPerformance = [
     earningAmount: '$457,000',
   },
   {
-    image:
-      product4,
+    image: product4,
     title: 'Stylish night lamp for night',
     desc: 'Electric, Wire, Current',
     rating: 'Poor',
@@ -843,24 +873,19 @@ export const medicalproBranding = {
   ],
   leaders: [
     {
-      image:
-        avatar2,
+      image: avatar2,
     },
     {
-      image:
-        avatar3,
+      image: avatar3,
     },
     {
-      image:
-        avatar2,
+      image: avatar2,
     },
     {
-      image:
-        avatar4,
+      image: avatar4,
     },
     {
-      image:
-        avatar,
+      image: avatar,
     },
   ],
 };
@@ -930,7 +955,8 @@ export const ordersGrid = [
     editType: 'dropdownedit',
     textAlign: 'Center',
   },
-  { field: 'CustomerName',
+  {
+    field: 'CustomerName',
     headerText: 'Customer Name',
     width: '150',
     textAlign: 'Center',
@@ -970,8 +996,7 @@ export const customersData = [
     CustomerID: 1001,
     CustomerName: 'Nirav Joshi',
     CustomerEmail: 'nirav@gmail.com',
-    CustomerImage:
-      avatar2,
+    CustomerImage: avatar2,
     ProjectName: 'Hosting Press HTML',
     Status: 'Bailed and Released',
     StatusBg: '#8BE78B',
@@ -986,8 +1011,7 @@ export const customersData = [
     CustomerEmail: 'sunil@gmail.com',
     ProjectName: 'Elite Admin',
     Status: 'Bailed and Released',
-    CustomerImage:
-      avatar3,
+    CustomerImage: avatar3,
 
     StatusBg: '#8BE78B',
     Weeks: '11',
@@ -1001,8 +1025,7 @@ export const customersData = [
     CustomerEmail: 'andrew@gmail.com',
     ProjectName: 'Real Homes WP Theme',
     Status: 'Granted but not released',
-    CustomerImage:
-      avatar4,
+    CustomerImage: avatar4,
     StatusBg: '#FEC90F',
     Weeks: '19',
     Budget: '$24.5k',
@@ -1015,8 +1038,7 @@ export const customersData = [
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
     Status: 'Bailed and Released',
-    CustomerImage:
-      avatar,
+    CustomerImage: avatar,
     StatusBg: '#8BE78B',
     Weeks: '34',
     Budget: '$16.5k',
@@ -1029,8 +1051,7 @@ export const customersData = [
     CustomerEmail: 'michael@gmail.com',
     ProjectName: 'Weekly WP Theme',
     Status: 'Prisoned',
-    CustomerImage:
-      avatar2,
+    CustomerImage: avatar2,
     StatusBg: 'red',
     Weeks: '34',
     Budget: '$16.5k',
@@ -1040,8 +1061,7 @@ export const customersData = [
     CustomerID: 1006,
     CustomerName: 'Nirav Joshi',
     CustomerEmail: 'nirav@gmail.com',
-    CustomerImage:
-      avatar2,
+    CustomerImage: avatar2,
     ProjectName: 'Hosting Press HTML',
     Status: 'Bailed and Released',
     StatusBg: '#8BE78B',
@@ -1056,8 +1076,7 @@ export const customersData = [
     CustomerEmail: 'sunil@gmail.com',
     ProjectName: 'Elite Admin',
     Status: 'Bailed and Released',
-    CustomerImage:
-      avatar3,
+    CustomerImage: avatar3,
 
     StatusBg: '#8BE78B',
     Weeks: '11',
@@ -1071,8 +1090,7 @@ export const customersData = [
     CustomerEmail: 'andrew@gmail.com',
     ProjectName: 'Real Homes WP Theme',
     Status: 'Granted but not released',
-    CustomerImage:
-      avatar4,
+    CustomerImage: avatar4,
     StatusBg: '#FEC90F',
     Weeks: '19',
     Budget: '$24.5k',
@@ -1085,8 +1103,7 @@ export const customersData = [
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
     Status: 'Bailed and Released',
-    CustomerImage:
-      avatar,
+    CustomerImage: avatar,
     StatusBg: '#8BE78B',
     Weeks: '34',
     Budget: '$16.5k',
@@ -1099,8 +1116,7 @@ export const customersData = [
     CustomerEmail: 'michael@gmail.com',
     ProjectName: 'Weekly WP Theme',
     Status: 'Prisoned',
-    CustomerImage:
-      avatar2,
+    CustomerImage: avatar2,
     StatusBg: 'red',
     Weeks: '34',
     Budget: '$16.5k',
@@ -1110,8 +1126,7 @@ export const customersData = [
     CustomerID: 1011,
     CustomerName: 'Nirav Joshi',
     CustomerEmail: 'nirav@gmail.com',
-    CustomerImage:
-      avatar2,
+    CustomerImage: avatar2,
     ProjectName: 'Hosting Press HTML',
     Status: 'Bailed and Released',
     StatusBg: '#8BE78B',
@@ -1126,8 +1141,7 @@ export const customersData = [
     CustomerEmail: 'sunil@gmail.com',
     ProjectName: 'Elite Admin',
     Status: 'Bailed and Released',
-    CustomerImage:
-      avatar3,
+    CustomerImage: avatar3,
 
     StatusBg: '#8BE78B',
     Weeks: '11',
@@ -1141,8 +1155,7 @@ export const customersData = [
     CustomerEmail: 'andrew@gmail.com',
     ProjectName: 'Real Homes WP Theme',
     Status: 'Granted but not released',
-    CustomerImage:
-      avatar4,
+    CustomerImage: avatar4,
     StatusBg: '#FEC90F',
     Weeks: '19',
     Budget: '$24.5k',
@@ -1155,8 +1168,7 @@ export const customersData = [
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
     Status: 'Bailed and Released',
-    CustomerImage:
-      avatar,
+    CustomerImage: avatar,
     StatusBg: '#8BE78B',
     Weeks: '34',
     Budget: '$16.5k',
@@ -1169,8 +1181,7 @@ export const customersData = [
     CustomerEmail: 'michael@gmail.com',
     ProjectName: 'Weekly WP Theme',
     Status: 'Prisoned',
-    CustomerImage:
-      avatar2,
+    CustomerImage: avatar2,
     StatusBg: 'red',
     Weeks: '34',
     Budget: '$16.5k',
@@ -1180,8 +1191,7 @@ export const customersData = [
     CustomerID: 1016,
     CustomerName: 'Nirav Joshi',
     CustomerEmail: 'nirav@gmail.com',
-    CustomerImage:
-      avatar2,
+    CustomerImage: avatar2,
     ProjectName: 'Hosting Press HTML',
     Status: 'Bailed and Released',
     StatusBg: '#8BE78B',
@@ -1196,8 +1206,7 @@ export const customersData = [
     CustomerEmail: 'sunil@gmail.com',
     ProjectName: 'Elite Admin',
     Status: 'Bailed and Released',
-    CustomerImage:
-      avatar3,
+    CustomerImage: avatar3,
 
     StatusBg: '#8BE78B',
     Weeks: '11',
@@ -1211,8 +1220,7 @@ export const customersData = [
     CustomerEmail: 'andrew@gmail.com',
     ProjectName: 'Real Homes WP Theme',
     Status: 'Granted but not released',
-    CustomerImage:
-      avatar4,
+    CustomerImage: avatar4,
     StatusBg: '#FEC90F',
     Weeks: '19',
     Budget: '$24.5k',
@@ -1225,8 +1233,7 @@ export const customersData = [
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
     Status: 'Released',
-    CustomerImage:
-      avatar,
+    CustomerImage: avatar,
     StatusBg: '#8BE78B',
     Weeks: '34',
     Budget: '$16.5k',
@@ -1239,15 +1246,12 @@ export const customersData = [
     CustomerEmail: 'michael@gmail.com',
     ProjectName: 'Weekly WP Theme',
     Status: 'Prisoned',
-    CustomerImage:
-      avatar2,
+    CustomerImage: avatar2,
     StatusBg: 'red',
     Weeks: '34',
     Budget: '$16.5k',
     Location: 'Delhi High Court',
   },
-  
-
 ];
 
 export const employeesData = [
@@ -1258,8 +1262,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Delhi',
     ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar3,
+    EmployeeImage: avatar3,
   },
   {
     EmployeeID: 2,
@@ -1268,8 +1271,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Gujrat',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar3,
+    EmployeeImage: avatar3,
   },
   {
     EmployeeID: 3,
@@ -1278,8 +1280,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Orissa',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar4,
+    EmployeeImage: avatar4,
   },
   {
     EmployeeID: 4,
@@ -1288,8 +1289,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Bihar',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
+    EmployeeImage: avatar2,
   },
   {
     EmployeeID: 5,
@@ -1298,8 +1298,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Delhi',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+    EmployeeImage: avatar,
   },
   {
     EmployeeID: 1,
@@ -1308,8 +1307,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Delhi',
     ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar3,
+    EmployeeImage: avatar3,
   },
   {
     EmployeeID: 2,
@@ -1318,8 +1316,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Gujrat',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar3,
+    EmployeeImage: avatar3,
   },
   {
     EmployeeID: 3,
@@ -1328,8 +1325,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Orissa',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar4,
+    EmployeeImage: avatar4,
   },
   {
     EmployeeID: 4,
@@ -1338,8 +1334,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Bihar',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
+    EmployeeImage: avatar2,
   },
   {
     EmployeeID: 5,
@@ -1348,8 +1343,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Delhi',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+    EmployeeImage: avatar,
   },
   {
     EmployeeID: 1,
@@ -1358,8 +1352,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Delhi',
     ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar3,
+    EmployeeImage: avatar3,
   },
   {
     EmployeeID: 2,
@@ -1368,8 +1361,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Gujrat',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar3,
+    EmployeeImage: avatar3,
   },
   {
     EmployeeID: 3,
@@ -1378,8 +1370,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Orissa',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar4,
+    EmployeeImage: avatar4,
   },
   {
     EmployeeID: 4,
@@ -1388,8 +1379,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Bihar',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
+    EmployeeImage: avatar2,
   },
   {
     EmployeeID: 5,
@@ -1398,8 +1388,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Delhi',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+    EmployeeImage: avatar,
   },
   {
     EmployeeID: 1,
@@ -1408,8 +1397,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Delhi',
     ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar3,
+    EmployeeImage: avatar3,
   },
   {
     EmployeeID: 2,
@@ -1418,8 +1406,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Gujrat',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar3,
+    EmployeeImage: avatar3,
   },
   {
     EmployeeID: 3,
@@ -1428,8 +1415,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Orissa',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar4,
+    EmployeeImage: avatar4,
   },
   {
     EmployeeID: 4,
@@ -1438,8 +1424,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Bihar',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
+    EmployeeImage: avatar2,
   },
   {
     EmployeeID: 5,
@@ -1448,8 +1433,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Delhi',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+    EmployeeImage: avatar,
   },
   {
     EmployeeID: 1,
@@ -1458,8 +1442,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Delhi',
     ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar3,
+    EmployeeImage: avatar3,
   },
   {
     EmployeeID: 2,
@@ -1468,8 +1451,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Gujrat',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar3,
+    EmployeeImage: avatar3,
   },
   {
     EmployeeID: 3,
@@ -1478,8 +1460,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Orissa',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar4,
+    EmployeeImage: avatar4,
   },
   {
     EmployeeID: 4,
@@ -1488,8 +1469,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Bihar',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
+    EmployeeImage: avatar2,
   },
   {
     EmployeeID: 5,
@@ -1498,8 +1478,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Delhi',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+    EmployeeImage: avatar,
   },
   {
     EmployeeID: 1,
@@ -1508,8 +1487,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Delhi',
     ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar3,
+    EmployeeImage: avatar3,
   },
   {
     EmployeeID: 2,
@@ -1518,8 +1496,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Gujrat',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar3,
+    EmployeeImage: avatar3,
   },
   {
     EmployeeID: 3,
@@ -1528,8 +1505,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Orissa',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar4,
+    EmployeeImage: avatar4,
   },
   {
     EmployeeID: 4,
@@ -1538,8 +1514,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Bihar',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar2,
+    EmployeeImage: avatar2,
   },
   {
     EmployeeID: 5,
@@ -1548,8 +1523,7 @@ export const employeesData = [
     HireDate: '01/02/2021',
     Country: 'Delhi',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+    EmployeeImage: avatar,
   },
 ];
 
@@ -1563,8 +1537,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'pending',
     StatusBg: '#FB9678',
-    ProductImage:
-      product6,
+    ProductImage: product6,
   },
   {
     OrderID: 345653,
@@ -1574,8 +1547,7 @@ export const ordersData = [
     Location: 'Delhi',
     Status: 'complete',
     StatusBg: '#8BE78B',
-    ProductImage:
-      product5,
+    ProductImage: product5,
   },
   {
     OrderID: 390457,
@@ -1585,8 +1557,7 @@ export const ordersData = [
     Location: 'New York',
     Status: 'active',
     StatusBg: '#03C9D7',
-    ProductImage:
-      product7,
+    ProductImage: product7,
   },
   {
     OrderID: 893486,
@@ -1596,8 +1567,7 @@ export const ordersData = [
     Location: 'Germany',
     Status: 'canceled',
     StatusBg: '#FF5C8E',
-    ProductImage:
-      product4,
+    ProductImage: product4,
   },
   {
     OrderID: 748975,
@@ -1607,8 +1577,7 @@ export const ordersData = [
     Location: 'Spain',
     Status: 'rejected',
     StatusBg: 'red',
-    ProductImage:
-    product1,
+    ProductImage: product1,
   },
   {
     OrderID: 94757,
@@ -1618,8 +1587,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'canceled',
     StatusBg: '#FF5C8E',
-    ProductImage:
-      product2,
+    ProductImage: product2,
   },
   {
     OrderID: 944895,
@@ -1629,8 +1597,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'active',
     StatusBg: '#03C9D7',
-    ProductImage:
-      product3,
+    ProductImage: product3,
   },
   {
     OrderID: 845954,
@@ -1640,8 +1607,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'complete',
     StatusBg: '#8BE78B',
-    ProductImage:
-      product4,
+    ProductImage: product4,
   },
   {
     OrderID: 845954,
@@ -1707,8 +1673,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'pending',
     StatusBg: '#FB9678',
-    ProductImage:
-      product6,
+    ProductImage: product6,
   },
   {
     OrderID: 345653,
@@ -1718,8 +1683,7 @@ export const ordersData = [
     Location: 'Delhi',
     Status: 'complete',
     StatusBg: '#8BE78B',
-    ProductImage:
-      product5,
+    ProductImage: product5,
   },
   {
     OrderID: 390457,
@@ -1729,8 +1693,7 @@ export const ordersData = [
     Location: 'New York',
     Status: 'active',
     StatusBg: '#03C9D7',
-    ProductImage:
-      product7,
+    ProductImage: product7,
   },
   {
     OrderID: 893486,
@@ -1740,8 +1703,7 @@ export const ordersData = [
     Location: 'Germany',
     Status: 'canceled',
     StatusBg: '#FF5C8E',
-    ProductImage:
-      product4,
+    ProductImage: product4,
   },
   {
     OrderID: 748975,
@@ -1751,8 +1713,7 @@ export const ordersData = [
     Location: 'Spain',
     Status: 'rejected',
     StatusBg: 'red',
-    ProductImage:
-      product1,
+    ProductImage: product1,
   },
   {
     OrderID: 94757,
@@ -1762,8 +1723,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'canceled',
     StatusBg: '#FF5C8E',
-    ProductImage:
-      product2,
+    ProductImage: product2,
   },
   {
     OrderID: 944895,
@@ -1773,8 +1733,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'active',
     StatusBg: '#03C9D7',
-    ProductImage:
-      product3,
+    ProductImage: product3,
   },
   {
     OrderID: 845954,
@@ -1784,8 +1743,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'complete',
     StatusBg: '#8BE78B',
-    ProductImage:
-      product4,
+    ProductImage: product4,
   },
   {
     OrderID: 845954,
@@ -1851,8 +1809,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'pending',
     StatusBg: '#FB9678',
-    ProductImage:
-      product6,
+    ProductImage: product6,
   },
   {
     OrderID: 345653,
@@ -1862,8 +1819,7 @@ export const ordersData = [
     Location: 'Delhi',
     Status: 'complete',
     StatusBg: '#8BE78B',
-    ProductImage:
-      product5,
+    ProductImage: product5,
   },
   {
     OrderID: 390457,
@@ -1873,8 +1829,7 @@ export const ordersData = [
     Location: 'New York',
     Status: 'active',
     StatusBg: '#03C9D7',
-    ProductImage:
-      product7,
+    ProductImage: product7,
   },
   {
     OrderID: 893486,
@@ -1884,8 +1839,7 @@ export const ordersData = [
     Location: 'Germany',
     Status: 'canceled',
     StatusBg: '#FF5C8E',
-    ProductImage:
-      product4,
+    ProductImage: product4,
   },
   {
     OrderID: 748975,
@@ -1895,8 +1849,7 @@ export const ordersData = [
     Location: 'Spain',
     Status: 'rejected',
     StatusBg: 'red',
-    ProductImage:
-      product1,
+    ProductImage: product1,
   },
   {
     OrderID: 94757,
@@ -1906,8 +1859,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'canceled',
     StatusBg: '#FF5C8E',
-    ProductImage:
-      product2,
+    ProductImage: product2,
   },
   {
     OrderID: 944895,
@@ -1917,8 +1869,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'active',
     StatusBg: '#03C9D7',
-    ProductImage:
-      product3,
+    ProductImage: product3,
   },
   {
     OrderID: 845954,
@@ -1928,8 +1879,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'complete',
     StatusBg: '#8BE78B',
-    ProductImage:
-      product4,
+    ProductImage: product4,
   },
   {
     OrderID: 845954,
@@ -1995,8 +1945,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'pending',
     StatusBg: '#FB9678',
-    ProductImage:
-      product6,
+    ProductImage: product6,
   },
   {
     OrderID: 345653,
@@ -2006,8 +1955,7 @@ export const ordersData = [
     Location: 'Delhi',
     Status: 'complete',
     StatusBg: '#8BE78B',
-    ProductImage:
-      product5,
+    ProductImage: product5,
   },
   {
     OrderID: 390457,
@@ -2017,8 +1965,7 @@ export const ordersData = [
     Location: 'New York',
     Status: 'active',
     StatusBg: '#03C9D7',
-    ProductImage:
-      product7,
+    ProductImage: product7,
   },
   {
     OrderID: 893486,
@@ -2028,8 +1975,7 @@ export const ordersData = [
     Location: 'Germany',
     Status: 'canceled',
     StatusBg: '#FF5C8E',
-    ProductImage:
-      product4,
+    ProductImage: product4,
   },
   {
     OrderID: 748975,
@@ -2039,8 +1985,7 @@ export const ordersData = [
     Location: 'Spain',
     Status: 'rejected',
     StatusBg: 'red',
-    ProductImage:
-      product1,
+    ProductImage: product1,
   },
   {
     OrderID: 94757,
@@ -2050,8 +1995,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'canceled',
     StatusBg: '#FF5C8E',
-    ProductImage:
-      product2,
+    ProductImage: product2,
   },
   {
     OrderID: 944895,
@@ -2061,8 +2005,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'active',
     StatusBg: '#03C9D7',
-    ProductImage:
-      product3,
+    ProductImage: product3,
   },
   {
     OrderID: 845954,
@@ -2072,8 +2015,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'complete',
     StatusBg: '#8BE78B',
-    ProductImage:
-      product4,
+    ProductImage: product4,
   },
   {
     OrderID: 845954,
@@ -2139,8 +2081,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'pending',
     StatusBg: '#FB9678',
-    ProductImage:
-      product6,
+    ProductImage: product6,
   },
   {
     OrderID: 345653,
@@ -2150,8 +2091,7 @@ export const ordersData = [
     Location: 'Delhi',
     Status: 'complete',
     StatusBg: '#8BE78B',
-    ProductImage:
-      product5,
+    ProductImage: product5,
   },
   {
     OrderID: 390457,
@@ -2161,8 +2101,7 @@ export const ordersData = [
     Location: 'New York',
     Status: 'active',
     StatusBg: '#03C9D7',
-    ProductImage:
-      product7,
+    ProductImage: product7,
   },
   {
     OrderID: 893486,
@@ -2172,8 +2111,7 @@ export const ordersData = [
     Location: 'Germany',
     Status: 'canceled',
     StatusBg: '#FF5C8E',
-    ProductImage:
-      product4,
+    ProductImage: product4,
   },
   {
     OrderID: 748975,
@@ -2183,8 +2121,7 @@ export const ordersData = [
     Location: 'Spain',
     Status: 'rejected',
     StatusBg: 'red',
-    ProductImage:
-      product1,
+    ProductImage: product1,
   },
   {
     OrderID: 94757,
@@ -2194,8 +2131,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'canceled',
     StatusBg: '#FF5C8E',
-    ProductImage:
-      product2,
+    ProductImage: product2,
   },
   {
     OrderID: 944895,
@@ -2205,8 +2141,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'active',
     StatusBg: '#03C9D7',
-    ProductImage:
-      product3,
+    ProductImage: product3,
   },
   {
     OrderID: 845954,
@@ -2216,8 +2151,7 @@ export const ordersData = [
     Location: 'USA',
     Status: 'complete',
     StatusBg: '#8BE78B',
-    ProductImage:
-      product4,
+    ProductImage: product4,
   },
   {
     OrderID: 845954,
@@ -2279,226 +2213,277 @@ export const ordersData = [
 export const scheduleData = [
   {
     Id: 1,
-    Subject: 'Explosion of Betelgeuse Star',
-    Location: 'Space Center USA',
-    StartTime: '2021-01-10T04:00:00.000Z',
-    EndTime: '2021-01-10T05:30:00.000Z',
+    Subject: 'Legal Aid Workshop in Mumbai',
+    Location: 'Mumbai, India',
+    StartTime: '2021-01-19T04:00:00.000Z',
+    EndTime: '2021-01-19T05:30:00.000Z',
     CategoryColor: '#1aaa55',
   },
   {
     Id: 2,
-    Subject: 'Thule Air Crash Report',
-    Location: 'Newyork City',
+    Subject: 'Legal Awareness Campaign in Delhi',
+    Location: 'Delhi, India',
     StartTime: '2021-01-11T06:30:00.000Z',
     EndTime: '2021-01-11T08:30:00.000Z',
     CategoryColor: '#357cd2',
   },
   {
     Id: 3,
-    Subject: 'Blue Moon Eclipse',
-    Location: 'Space Center USA',
+    Subject: 'Legal Aid Seminar in Bangalore',
+    Location: 'Bangalore, India',
     StartTime: '2021-01-12T04:00:00.000Z',
     EndTime: '2021-01-12T05:30:00.000Z',
     CategoryColor: '#7fa900',
   },
   {
     Id: 4,
-    Subject: 'Meteor Showers in 2021',
-    Location: 'Space Center USA',
-    StartTime: '2021-01-13T07:30:00.000Z',
-    EndTime: '2021-01-13T09:00:00.000Z',
-    CategoryColor: '#ea7a57',
+    Subject: 'Legal Awareness Workshop in Chennai',
+    Location: 'Chennai, India',
+    StartTime: '2021-05-15T10:00:00.000Z',
+    EndTime: '2021-05-15T12:00:00.000Z',
+    CategoryColor: '#ff5b4f',
   },
   {
     Id: 5,
-    Subject: 'Milky Way as Melting pot',
-    Location: 'Space Center USA',
-    StartTime: '2021-01-14T06:30:00.000Z',
-    EndTime: '2021-01-14T08:30:00.000Z',
-    CategoryColor: '#00bdae',
+    Subject: 'Legal Aid Camp in Kolkata',
+    Location: 'Kolkata, India',
+    StartTime: '2021-08-22T09:30:00.000Z',
+    EndTime: '2021-08-22T11:30:00.000Z',
+    CategoryColor: '#7953d2',
   },
   {
     Id: 6,
-    Subject: 'Mysteries of Bermuda Triangle',
-    Location: 'Bermuda',
-    StartTime: '2021-01-14T04:00:00.000Z',
-    EndTime: '2021-01-14T05:30:00.000Z',
+    Subject: 'Legal Seminar in Hyderabad',
+    Location: 'Hyderabad, India',
+    StartTime: '2021-10-10T14:00:00.000Z',
+    EndTime: '2021-10-10T16:00:00.000Z',
     CategoryColor: '#f57f17',
   },
   {
     Id: 7,
-    Subject: 'Glaciers and Snowflakes',
-    Location: 'Himalayas',
-    StartTime: '2021-01-15T05:30:00.000Z',
-    EndTime: '2021-01-15T07:00:00.000Z',
-    CategoryColor: '#1aaa55',
+    Subject: 'Legal Aid Workshop in Ahmedabad',
+    Location: 'Ahmedabad, India',
+    StartTime: '2021-07-08T10:30:00.000Z',
+    EndTime: '2021-07-08T12:30:00.000Z',
+    CategoryColor: '#ffaa00',
   },
   {
     Id: 8,
-    Subject: 'Life on Mars',
-    Location: 'Space Center USA',
-    StartTime: '2021-01-16T03:30:00.000Z',
-    EndTime: '2021-01-16T04:30:00.000Z',
-    CategoryColor: '#357cd2',
+    Subject: 'Legal Awareness Seminar in Pune',
+    Location: 'Pune, India',
+    StartTime: '2021-03-25T15:00:00.000Z',
+    EndTime: '2021-03-25T17:00:00.000Z',
+    CategoryColor: '#44aa77',
   },
   {
     Id: 9,
-    Subject: 'Alien Civilization',
-    Location: 'Space Center USA',
-    StartTime: '2021-01-18T05:30:00.000Z',
-    EndTime: '2021-01-18T07:30:00.000Z',
-    CategoryColor: '#7fa900',
+    Subject: 'Legal Aid Camp in Jaipur',
+    Location: 'Jaipur, India',
+    StartTime: '2021-09-05T11:00:00.000Z',
+    EndTime: '2021-09-05T13:00:00.000Z',
+    CategoryColor: '#ff6f61',
   },
   {
     Id: 10,
-    Subject: 'Wildlife Galleries',
-    Location: 'Africa',
-    StartTime: '2021-01-20T05:30:00.000Z',
-    EndTime: '2021-01-20T07:30:00.000Z',
-    CategoryColor: '#ea7a57',
+    Subject: 'Legal Awareness Workshop in Lucknow',
+    Location: 'Lucknow, India',
+    StartTime: '2021-12-18T09:00:00.000Z',
+    EndTime: '2021-12-18T11:00:00.000Z',
+    CategoryColor: '#546de5',
   },
   {
     Id: 11,
-    Subject: 'Best Photography 2021',
-    Location: 'London',
-    StartTime: '2021-01-21T04:00:00.000Z',
-    EndTime: '2021-01-21T05:30:00.000Z',
-    CategoryColor: '#00bdae',
+    Subject: 'Legal Aid Camp in Indore',
+    Location: 'Indore, India',
+    StartTime: '2021-02-14T08:30:00.000Z',
+    EndTime: '2021-02-14T10:30:00.000Z',
+    CategoryColor: '#ff784f',
   },
   {
     Id: 12,
-    Subject: 'Smarter Puppies',
-    Location: 'Sweden',
-    StartTime: '2021-01-08T04:30:00.000Z',
-    EndTime: '2021-01-08T06:00:00.000Z',
-    CategoryColor: '#f57f17',
+    Subject: 'Legal Awareness Workshop in Bhopal',
+    Location: 'Bhopal, India',
+    StartTime: '2021-03-20T14:30:00.000Z',
+    EndTime: '2021-03-20T16:30:00.000Z',
+    CategoryColor: '#6a69e4',
   },
   {
     Id: 13,
-    Subject: 'Myths of Andromeda Galaxy',
-    Location: 'Space Center USA',
-    StartTime: '2021-01-06T05:00:00.000Z',
-    EndTime: '2021-01-06T07:00:00.000Z',
-    CategoryColor: '#1aaa55',
+    Subject: 'Legal Seminar in Varanasi',
+    Location: 'Varanasi, India',
+    StartTime: '2021-04-10T09:00:00.000Z',
+    EndTime: '2021-04-10T11:00:00.000Z',
+    CategoryColor: '#f54271',
   },
   {
     Id: 14,
-    Subject: 'Aliens vs Humans',
-    Location: 'Research Center of USA',
-    StartTime: '2021-01-05T04:30:00.000Z',
-    EndTime: '2021-01-05T06:00:00.000Z',
-    CategoryColor: '#357cd2',
+    Subject: 'Legal Aid Workshop in Kochi',
+    Location: 'Kochi, India',
+    StartTime: '2021-05-25T13:00:00.000Z',
+    EndTime: '2021-05-25T15:00:00.000Z',
+    CategoryColor: '#31b94d',
   },
   {
     Id: 15,
-    Subject: 'Facts of Humming Birds',
-    Location: 'California',
-    StartTime: '2021-01-19T04:00:00.000Z',
-    EndTime: '2021-01-19T05:30:00.000Z',
-    CategoryColor: '#7fa900',
+    Subject: 'Legal Awareness Campaign in Jaipur',
+    Location: 'Jaipur, India',
+    StartTime: '2021-06-08T16:00:00.000Z',
+    EndTime: '2021-06-08T18:00:00.000Z',
+    CategoryColor: '#f9b851',
   },
   {
     Id: 16,
-    Subject: 'Sky Gazers',
-    Location: 'Alaska',
-    StartTime: '2021-01-22T05:30:00.000Z',
-    EndTime: '2021-01-22T07:30:00.000Z',
-    CategoryColor: '#ea7a57',
+    Subject: 'Legal Seminar in Patna',
+    Location: 'Patna, India',
+    StartTime: '2021-07-19T10:00:00.000Z',
+    EndTime: '2021-07-19T12:00:00.000Z',
+    CategoryColor: '#f9b851',
   },
   {
     Id: 17,
-    Subject: 'The Cycle of Seasons',
-    Location: 'Research Center of USA',
-    StartTime: '2021-01-11T00:00:00.000Z',
-    EndTime: '2021-01-11T02:00:00.000Z',
-    CategoryColor: '#00bdae',
+    Subject: 'Legal Aid Camp in Coimbatore',
+    Location: 'Coimbatore, India',
+    StartTime: '2021-08-11T11:30:00.000Z',
+    EndTime: '2021-08-11T13:30:00.000Z',
+    CategoryColor: '#31b94d',
   },
   {
     Id: 18,
-    Subject: 'Space Galaxies and Planets',
-    Location: 'Space Center USA',
-    StartTime: '2021-01-11T11:30:00.000Z',
-    EndTime: '2021-01-11T13:00:00.000Z',
-    CategoryColor: '#f57f17',
+    Subject: 'Legal Awareness Workshop in Surat',
+    Location: 'Surat, India',
+    StartTime: '2021-09-30T14:00:00.000Z',
+    EndTime: '2021-09-30T16:00:00.000Z',
+    CategoryColor: '#6a69e4',
   },
   {
     Id: 19,
-    Subject: 'Lifecycle of Bumblebee',
-    Location: 'San Fransisco',
-    StartTime: '2021-01-14T00:30:00.000Z',
-    EndTime: '2021-01-14T02:00:00.000Z',
-    CategoryColor: '#7fa900',
+    Subject: 'Legal Aid Seminar in Ludhiana',
+    Location: 'Ludhiana, India',
+    StartTime: '2021-10-28T09:30:00.000Z',
+    EndTime: '2021-10-28T11:30:00.000Z',
+    CategoryColor: '#ff784f',
   },
   {
     Id: 20,
-    Subject: 'Alien Civilization',
-    Location: 'Space Center USA',
-    StartTime: '2021-01-14T10:30:00.000Z',
-    EndTime: '2021-01-14T12:30:00.000Z',
-    CategoryColor: '#ea7a57',
+    Subject: 'Legal Awareness Campaign in Kanpur',
+    Location: 'Kanpur, India',
+    StartTime: '2021-11-15T15:00:00.000Z',
+    EndTime: '2021-11-15T17:00:00.000Z',
+    CategoryColor: '#f54271',
   },
   {
     Id: 21,
-    Subject: 'Alien Civilization',
-    Location: 'Space Center USA',
-    StartTime: '2021-01-10T08:30:00.000Z',
-    EndTime: '2021-01-10T10:30:00.000Z',
-    CategoryColor: '#ea7a57',
+    Subject: 'Legal Aid Workshop in Rajkot',
+    Location: 'Rajkot, India',
+    StartTime: '2021-02-05T10:00:00.000Z',
+    EndTime: '2021-02-05T12:00:00.000Z',
+    CategoryColor: '#31b94d',
   },
   {
     Id: 22,
-    Subject: 'The Cycle of Seasons',
-    Location: 'Research Center of USA',
-    StartTime: '2021-01-12T09:00:00.000Z',
-    EndTime: '2021-01-12T10:30:00.000Z',
-    CategoryColor: '#00bdae',
+    Subject: 'Legal Awareness Seminar in Amritsar',
+    Location: 'Amritsar, India',
+    StartTime: '2021-03-22T09:30:00.000Z',
+    EndTime: '2021-03-22T11:30:00.000Z',
+    CategoryColor: '#f9b851',
   },
   {
     Id: 23,
-    Subject: 'Sky Gazers',
-    Location: 'Greenland',
-    StartTime: '2021-01-15T09:00:00.000Z',
-    EndTime: '2021-01-15T10:30:00.000Z',
-    CategoryColor: '#ea7a57',
+    Subject: 'Legal Aid Camp in Madurai',
+    Location: 'Madurai, India',
+    StartTime: '2021-04-18T08:00:00.000Z',
+    EndTime: '2021-04-18T10:00:00.000Z',
+    CategoryColor: '#ff784f',
   },
   {
     Id: 24,
-    Subject: 'Facts of Humming Birds',
-    Location: 'California',
-    StartTime: '2021-01-16T07:00:00.000Z',
-    EndTime: '2021-01-16T09:00:00.000Z',
-    CategoryColor: '#7fa900',
+    Subject: 'Legal Awareness Workshop in Jodhpur',
+    Location: 'Jodhpur, India',
+    StartTime: '2021-05-10T13:30:00.000Z',
+    EndTime: '2021-05-10T15:30:00.000Z',
+    CategoryColor: '#6a69e4',
   },
+  {
+    Id: 25,
+    Subject: 'Legal Seminar in Shimla',
+    Location: 'Shimla, India',
+    StartTime: '2021-06-29T16:30:00.000Z',
+    EndTime: '2021-06-29T18:30:00.000Z',
+    CategoryColor: '#f54271',
+  },
+  {
+    Id: 26,
+    Subject: 'Legal Aid Workshop in Visakhapatnam',
+    Location: 'Visakhapatnam, India',
+    StartTime: '2021-07-16T10:30:00.000Z',
+    EndTime: '2021-07-16T12:30:00.000Z',
+    CategoryColor: '#ffaa00',
+  },
+  {
+    Id: 27,
+    Subject: 'Legal Awareness Campaign in Udaipur',
+    Location: 'Udaipur, India',
+    StartTime: '2021-08-03T14:30:00.000Z',
+    EndTime: '2021-08-03T16:30:00.000Z',
+    CategoryColor: '#44aa77',
+  },
+  {
+    Id: 28,
+    Subject: 'Legal Aid Seminar in Agra',
+    Location: 'Agra, India',
+    StartTime: '2021-09-20T09:00:00.000Z',
+    EndTime: '2021-09-20T11:00:00.000Z',
+    CategoryColor: '#ff6f61',
+  },
+  {
+    Id: 29,
+    Subject: 'Legal Aid Camp in Allahabad',
+    Location: 'Allahabad, India',
+    StartTime: '2021-10-07T14:00:00.000Z',
+    EndTime: '2021-10-07T16:00:00.000Z',
+    CategoryColor: '#31b94d',
+  },
+  {
+    Id: 30,
+    Subject: 'Legal Awareness Workshop in Guwahati',
+    Location: 'Guwahati, India',
+    StartTime: '2021-11-28T11:30:00.000Z',
+    EndTime: '2021-11-28T13:30:00.000Z',
+    CategoryColor: '#6a69e4',
+  },
+
 ];
+
+
 
 export const lineChartData = [
   [
-    { x: new Date(2005, 0, 1), y: 21 },
-    { x: new Date(2006, 0, 1), y: 24 },
-    { x: new Date(2007, 0, 1), y: 36 },
-    { x: new Date(2008, 0, 1), y: 38 },
-    { x: new Date(2009, 0, 1), y: 54 },
-    { x: new Date(2010, 0, 1), y: 57 },
-    { x: new Date(2011, 0, 1), y: 70 },
+    { x: new Date(2016, 0, 1), y: 21 },
+    { x: new Date(2017, 0, 1), y: 24 },
+    { x: new Date(2018, 0, 1), y: 36 },
+    { x: new Date(2019, 0, 1), y: 38 },
+    { x: new Date(2020, 0, 1), y: 54 },
+    { x: new Date(2021, 0, 1), y: 57 },
+    { x: new Date(2022, 0, 1), y: 70 },
   ],
   [
-    { x: new Date(2005, 0, 1), y: 28 },
-    { x: new Date(2006, 0, 1), y: 44 },
-    { x: new Date(2007, 0, 1), y: 48 },
-    { x: new Date(2008, 0, 1), y: 50 },
-    { x: new Date(2009, 0, 1), y: 66 },
-    { x: new Date(2010, 0, 1), y: 78 },
-    { x: new Date(2011, 0, 1), y: 84 },
+    { x: new Date(2016, 0, 1), y: 28 },
+    { x: new Date(2017, 0, 1), y: 44 },
+    { x: new Date(2018, 0, 1), y: 48 },
+    { x: new Date(2019, 0, 1), y: 50 },
+    { x: new Date(2020, 0, 1), y: 66 },
+    { x: new Date(2021, 0, 1), y: 78 },
+    { x: new Date(2022, 0, 1), y: 84 },
   ],
 
   [
-    { x: new Date(2005, 0, 1), y: 10 },
-    { x: new Date(2006, 0, 1), y: 20 },
-    { x: new Date(2007, 0, 1), y: 30 },
-    { x: new Date(2008, 0, 1), y: 39 },
-    { x: new Date(2009, 0, 1), y: 50 },
-    { x: new Date(2010, 0, 1), y: 70 },
-    { x: new Date(2011, 0, 1), y: 100 },
+    { x: new Date(2016, 0, 1), y: 10 },
+    { x: new Date(2017, 0, 1), y: 20 },
+    { x: new Date(2018, 0, 1), y: 30 },
+    { x: new Date(2019, 0, 1), y: 39 },
+    { x: new Date(2020, 0, 1), y: 50 },
+    { x: new Date(2021, 0, 1), y: 70 },
+    { x: new Date(2022, 0, 1), y: 100 },
   ],
 ];
 export const dropdownData = [
@@ -2509,7 +2494,8 @@ export const dropdownData = [
   {
     Id: '2',
     Time: 'April 2021',
-  }, {
+  },
+  {
     Id: '3',
     Time: 'May 2021',
   },
@@ -2520,14 +2506,13 @@ export const SparklineAreaData = [
   { x: 3, yval: 8 },
   { x: 4, yval: 5 },
   { x: 5, yval: 10 },
-
 ];
 
 export const lineCustomSeries = [
   { dataSource: lineChartData[0],
     xName: 'x',
     yName: 'y',
-    name: 'Germany',
+    name: 'Bihar',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
     type: 'Line' },
@@ -2535,7 +2520,7 @@ export const lineCustomSeries = [
   { dataSource: lineChartData[1],
     xName: 'x',
     yName: 'y',
-    name: 'England',
+    name: 'Uttar Pradesh',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
     type: 'Line' },
@@ -2543,11 +2528,10 @@ export const lineCustomSeries = [
   { dataSource: lineChartData[2],
     xName: 'x',
     yName: 'y',
-    name: 'India',
+    name: 'Jammu And Kashmir',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
     type: 'Line' },
-
 ];
 
 export const pieChartData = [
@@ -2588,13 +2572,13 @@ export const ecomPieChartData = [
 
 export const stackedChartData = [
   [
-    { x: 'Jan', y: 111.1 },
-    { x: 'Feb', y: 127.3 },
-    { x: 'Mar', y: 143.4 },
-    { x: 'Apr', y: 159.9 },
-    { x: 'May', y: 159.9 },
-    { x: 'Jun', y: 159.9 },
-    { x: 'July', y: 159.9 },
+    { x: 'Bihar', y: 111.1 },
+    { x: 'UP', y: 127.3 },
+    { x: 'JK', y: 143.4 },
+    { x: 'Gujrat', y: 159.9 },
+    { x: 'Punjab', y: 159.9 },
+    { x: 'Rajasthan', y: 159.9 },
+    { x: 'Kerala', y: 159.9 },
   ],
   [
     { x: 'Jan', y: 111.1 },
@@ -2606,26 +2590,24 @@ export const stackedChartData = [
     { x: 'July', y: 159.9 },
   ],
 ];
-
 export const stackedCustomSeries = [
-
   { dataSource: stackedChartData[0],
     xName: 'x',
     yName: 'y',
-    name: 'Budget',
+    name: 'State Wise Distribution',
     type: 'StackingColumn',
     background: 'blue',
 
   },
 
-  { dataSource: stackedChartData[1],
-    xName: 'x',
-    yName: 'y',
-    name: 'Expense',
-    type: 'StackingColumn',
-    background: 'red',
+  // { dataSource: stackedChartData[1],
+  //   xName: 'x',
+  //   yName: 'y',
+  //   name: 'Expense',
+  //   type: 'StackingColumn',
+  //   background: 'red',
 
-  },
+  // },
 
 ];
 
@@ -2655,355 +2637,118 @@ export const stackedPrimaryYAxis = {
 export const kanbanData = [
   {
     Id: 'Task 1',
-    Title: 'Task - 29001',
+    Title: 'Undertrial Case - 1234',
     Status: 'Open',
-    Summary: 'Analyze the new requirements gathered from the customer.',
-    Type: 'Story',
-    Priority: 'Low',
-    Tags: 'Analyze,Customer',
-    Estimate: 3.5,
-    Assignee: 'Nancy Davloio',
+    Summary: 'Review the case of an undertrial prisoner',
+    Type: 'Legal',
+    Priority: 'High',
+    Tags: 'Undertrial, Legal',
+    Estimate: 4.0,
+    Assignee: 'John Smith',
     RankId: 1,
     Color: '#02897B',
-    ClassName: 'e-story, e-low, e-nancy-davloio',
+    ClassName: 'e-story, e-high, e-john-smith',
   },
   {
     Id: 'Task 2',
-    Title: 'Task - 29002',
+    Title: 'Undertrial Case - 5678',
     Status: 'InProgress',
-    Summary: 'Improve application performance',
-    Type: 'Improvement',
+    Summary: 'Investigate the circumstances of an undertrial prisoner',
+    Type: 'Investigation',
     Priority: 'Normal',
-    Tags: 'Improvement',
-    Estimate: 6,
-    Assignee: 'Andrew Fuller',
+    Tags: 'Undertrial, Investigation',
+    Estimate: 7.5,
+    Assignee: 'Mary Johnson',
     RankId: 1,
     Color: '#673AB8',
-    ClassName: 'e-improvement, e-normal, e-andrew-fuller',
+    ClassName: 'e-improvement, e-normal, e-mary-johnson',
   },
   {
     Id: 'Task 3',
-    Title: 'Task - 29003',
+    Title: 'Undertrial Case - 7890',
     Status: 'Open',
-    Summary: 'Arrange a web meeting with the customer to get new requirements.',
-    Type: 'Others',
+    Summary: 'Arrange a meeting with the legal team regarding an undertrial case',
+    Type: 'Legal',
     Priority: 'Critical',
-    Tags: 'Meeting',
-    Estimate: 5.5,
-    Assignee: 'Janet Leverling',
+    Tags: 'Undertrial, Legal, Meeting',
+    Estimate: 6.0,
+    Assignee: 'David Brown',
     RankId: 2,
     Color: '#1F88E5',
-    ClassName: 'e-others, e-critical, e-janet-leverling',
+    ClassName: 'e-others, e-critical, e-david-brown',
   },
   {
     Id: 'Task 4',
-    Title: 'Task - 29004',
+    Title: 'Undertrial Case - 2345',
     Status: 'InProgress',
-    Summary: 'Fix the issues reported in the IE browser.',
-    Type: 'Bug',
-    Priority: 'Critical',
-    Tags: 'IE',
-    Estimate: 2.5,
-    Assignee: 'Janet Leverling',
+    Summary: 'Prepare a defense strategy for an undertrial prisoner',
+    Type: 'Legal',
+    Priority: 'High',
+    Tags: 'Undertrial, Legal, Defense',
+    Estimate: 9.0,
+    Assignee: 'Sarah Davis',
     RankId: 2,
     Color: '#E64A19',
-    ClassName: 'e-bug, e-release, e-janet-leverling',
+    ClassName: 'e-bug, e-release, e-sarah-davis',
   },
   {
     Id: 'Task 5',
-    Title: 'Task - 29005',
+    Title: 'Undertrial Case - 6789',
     Status: 'Review',
-    Summary: 'Fix the issues reported by the customer.',
-    Type: 'Bug',
-    Priority: 'Low',
-    Tags: 'Customer',
-    Estimate: '3.5',
-    Assignee: 'Steven walker',
+    Summary: 'Assess the health and well-being of an undertrial prisoner',
+    Type: 'Health',
+    Priority: 'Normal',
+    Tags: 'Undertrial, Health',
+    Estimate: 5.0,
+    Assignee: 'Michael Wilson',
     RankId: 1,
     Color: '#E64A19',
-    ClassName: 'e-bug, e-low, e-steven-walker',
+    ClassName: 'e-bug, e-normal, e-michael-wilson',
   },
   {
     Id: 'Task 6',
-    Title: 'Task - 29007',
+    Title: 'Undertrial Case - 3456',
     Status: 'Validate',
-    Summary: 'Validate new requirements',
-    Type: 'Improvement',
+    Summary: 'Validate the identity and background of an undertrial prisoner',
+    Type: 'Validation',
     Priority: 'Low',
-    Tags: 'Validation',
-    Estimate: 1.5,
-    Assignee: 'Robert King',
+    Tags: 'Undertrial, Validation',
+    Estimate: 2.0,
+    Assignee: 'Emily Jackson',
     RankId: 1,
     Color: '#673AB8',
-    ClassName: 'e-improvement, e-low, e-robert-king',
+    ClassName: 'e-improvement, e-low, e-emily-jackson',
   },
   {
     Id: 'Task 7',
-    Title: 'Task - 29009',
+    Title: 'Undertrial Case - 8901',
     Status: 'Review',
-    Summary: 'Fix the issues reported in Safari browser.',
-    Type: 'Bug',
+    Summary: 'Review the legal documents and case history of an undertrial prisoner',
+    Type: 'Legal',
     Priority: 'Critical',
-    Tags: 'Fix,Safari',
-    Estimate: 1.5,
-    Assignee: 'Nancy Davloio',
+    Tags: 'Undertrial, Legal, Review',
+    Estimate: 3.0,
+    Assignee: 'Daniel White',
     RankId: 2,
     Color: '#E64A19',
-    ClassName: 'e-bug, e-release, e-nancy-davloio',
+    ClassName: 'e-bug, e-release, e-daniel-white',
   },
   {
     Id: 'Task 8',
-    Title: 'Task - 29010',
+    Title: 'Undertrial Case - 4567',
     Status: 'Close',
-    Summary: 'Test the application in the IE browser.',
-    Type: 'Story',
-    Priority: 'Low',
-    Tags: 'Review,IE',
-    Estimate: 5.5,
-    Assignee: 'Margaret hamilt',
+    Summary: 'Conduct a court hearing for an undertrial prisoner',
+    Type: 'Legal',
+    Priority: 'High',
+    Tags: 'Undertrial, Legal, Court Hearing',
+    Estimate: 8.0,
+    Assignee: 'Laura Anderson',
     RankId: 3,
     Color: '#02897B',
-    ClassName: 'e-story, e-low, e-margaret-hamilt',
-  },
-  {
-    Id: 'Task 9',
-    Title: 'Task - 29011',
-    Status: 'Validate',
-    Summary: 'Validate the issues reported by the customer.',
-    Type: 'Story',
-    Priority: 'High',
-    Tags: 'Validation,Fix',
-    Estimate: 1,
-    Assignee: 'Steven walker',
-    RankId: 1,
-    Color: '#02897B',
-    ClassName: 'e-story, e-high, e-steven-walker',
-  },
-  {
-    Id: 'Task 10',
-    Title: 'Task - 29015',
-    Status: 'Open',
-    Summary: 'Show the retrieved data from the server in grid control.',
-    Type: 'Story',
-    Priority: 'High',
-    Tags: 'Database,SQL',
-    Estimate: 5.5,
-    Assignee: 'Margaret hamilt',
-    RankId: 4,
-    Color: '#02897B',
-    ClassName: 'e-story, e-high, e-margaret-hamilt',
-  },
-  {
-    Id: 'Task 11',
-    Title: 'Task - 29016',
-    Status: 'InProgress',
-    Summary: 'Fix cannot open user’s default database SQL error.',
-    Priority: 'Critical',
-    Type: 'Bug',
-    Tags: 'Database,Sql2008',
-    Estimate: 2.5,
-    Assignee: 'Janet Leverling',
-    RankId: 4,
-    Color: '#E64A19',
-    ClassName: 'e-bug, e-critical, e-janet-leverling',
-  },
-  {
-    Id: 'Task 12',
-    Title: 'Task - 29017',
-    Status: 'Review',
-    Summary: 'Fix the issues reported in data binding.',
-    Type: 'Story',
-    Priority: 'Normal',
-    Tags: 'Databinding',
-    Estimate: '3.5',
-    Assignee: 'Janet Leverling',
-    RankId: 4,
-    Color: '#02897B',
-    ClassName: 'e-story, e-normal, e-janet-leverling',
-  },
-  {
-    Id: 'Task 13',
-    Title: 'Task - 29018',
-    Status: 'Close',
-    Summary: 'Analyze SQL server 2008 connection.',
-    Type: 'Story',
-    Priority: 'Critical',
-    Tags: 'Grid,Sql',
-    Estimate: 2,
-    Assignee: 'Andrew Fuller',
-    RankId: 4,
-    Color: '#02897B',
-    ClassName: 'e-story, e-release, e-andrew-fuller',
-  },
-  {
-    Id: 'Task 14',
-    Title: 'Task - 29019',
-    Status: 'Validate',
-    Summary: 'Validate databinding issues.',
-    Type: 'Story',
-    Priority: 'Low',
-    Tags: 'Validation',
-    Estimate: 1.5,
-    Assignee: 'Margaret hamilt',
-    RankId: 1,
-    Color: '#02897B',
-    ClassName: 'e-story, e-low, e-margaret-hamilt',
-  },
-  {
-    Id: 'Task 15',
-    Title: 'Task - 29020',
-    Status: 'Close',
-    Summary: 'Analyze grid control.',
-    Type: 'Story',
-    Priority: 'High',
-    Tags: 'Analyze',
-    Estimate: 2.5,
-    Assignee: 'Margaret hamilt',
-    RankId: 5,
-    Color: '#02897B',
-    ClassName: 'e-story, e-high, e-margaret-hamilt',
-  },
-  {
-    Id: 'Task 16',
-    Title: 'Task - 29021',
-    Status: 'Close',
-    Summary: 'Stored procedure for initial data binding of the grid.',
-    Type: 'Others',
-    Priority: 'Critical',
-    Tags: 'Databinding',
-    Estimate: 1.5,
-    Assignee: 'Steven walker',
-    RankId: 6,
-    Color: '#1F88E5',
-    ClassName: 'e-others, e-release, e-steven-walker',
-  },
-  {
-    Id: 'Task 17',
-    Title: 'Task - 29022',
-    Status: 'Close',
-    Summary: 'Analyze stored procedures.',
-    Type: 'Story',
-    Priority: 'Critical',
-    Tags: 'Procedures',
-    Estimate: 5.5,
-    Assignee: 'Janet Leverling',
-    RankId: 7,
-    Color: '#02897B',
-    ClassName: 'e-story, e-release, e-janet-leverling',
-  },
-  {
-    Id: 'Task 18',
-    Title: 'Task - 29023',
-    Status: 'Validate',
-    Summary: 'Validate editing issues.',
-    Type: 'Story',
-    Priority: 'Critical',
-    Tags: 'Editing',
-    Estimate: 1,
-    Assignee: 'Nancy Davloio',
-    RankId: 1,
-    Color: '#02897B',
-    ClassName: 'e-story, e-critical, e-nancy-davloio',
-  },
-  {
-    Id: 'Task 19',
-    Title: 'Task - 29024',
-    Status: 'Review',
-    Summary: 'Test editing functionality.',
-    Type: 'Story',
-    Priority: 'Normal',
-    Tags: 'Editing,Test',
-    Estimate: 0.5,
-    Assignee: 'Nancy Davloio',
-    RankId: 5,
-    Color: '#02897B',
-    ClassName: 'e-story, e-normal, e-nancy-davloio',
-  },
-  {
-    Id: 'Task 20',
-    Title: 'Task - 29025',
-    Status: 'Open',
-    Summary: 'Enhance editing functionality.',
-    Type: 'Improvement',
-    Priority: 'Low',
-    Tags: 'Editing',
-    Estimate: 3.5,
-    Assignee: 'Andrew Fuller',
-    RankId: 5,
-    Color: '#673AB8',
-    ClassName: 'e-improvement, e-low, e-andrew-fuller',
-  },
-  {
-    Id: 'Task 21',
-    Title: 'Task - 29026',
-    Status: 'InProgress',
-    Summary: 'Improve the performance of the editing functionality.',
-    Type: 'Epic',
-    Priority: 'High',
-    Tags: 'Performance',
-    Estimate: 6,
-    Assignee: 'Nancy Davloio',
-    RankId: 5,
-    Color: '#e91e64',
-    ClassName: 'e-epic, e-high, e-nancy-davloio',
-  },
-  {
-    Id: 'Task 22',
-    Title: 'Task - 29027',
-    Status: 'Open',
-    Summary: 'Arrange web meeting with the customer to show editing demo.',
-    Type: 'Others',
-    Priority: 'High',
-    Tags: 'Meeting,Editing',
-    Estimate: 5.5,
-    Assignee: 'Steven walker',
-    RankId: 6,
-    Color: '#1F88E5',
-    ClassName: 'e-others, e-high, e-steven-walker',
-  },
-  {
-    Id: 'Task 23',
-    Title: 'Task - 29029',
-    Status: 'Review',
-    Summary: 'Fix the editing issues reported by the customer.',
-    Type: 'Bug',
-    Priority: 'Low',
-    Tags: 'Editing,Fix',
-    Estimate: '3.5',
-    Assignee: 'Janet Leverling',
-    RankId: 6,
-    Color: '#E64A19',
-    ClassName: 'e-bug, e-low, e-janet-leverling',
-  },
-  {
-    Id: 'Task 24',
-    Title: 'Task - 29030',
-    Status: 'Testing',
-    Summary: 'Fix the issues reported by the customer.',
-    Type: 'Bug',
-    Priority: 'Critical',
-    Tags: 'Customer',
-    Estimate: '3.5',
-    Assignee: 'Steven walker',
-    RankId: 1,
-    Color: '#E64A19',
-    ClassName: 'e-bug, e-critical, e-steven-walker',
-  },
-  {
-    Id: 'Task 25',
-    Title: 'Task - 29031',
-    Status: 'Testing',
-    Summary: 'Fix the issues reported in Safari browser.',
-    Type: 'Bug',
-    Priority: 'Critical',
-    Tags: 'Fix,Safari',
-    Estimate: 1.5,
-    Assignee: 'Nancy Davloio',
-    RankId: 2,
-    Color: '#E64A19',
-    ClassName: 'e-bug, e-release, e-nancy-davloio',
+    ClassName: 'e-story, e-high, e-laura-anderson',
   },
 ];
+
 
 export const financialChartData = [
   {
