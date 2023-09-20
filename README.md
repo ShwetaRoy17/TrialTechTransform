@@ -11,7 +11,6 @@
 </ul>
 
 <p>"We split the solution into three parts:</p>
-<br>
 <div>
 <h3>>>Legal Connect </bApp<b> <i>NyayYatra</i></h3>
 <p>This app connects lawyers and people who need legal help (UTP). It lets you book appointments, get case updates, access legal resources, and offers rehabilitation support.</p>
@@ -21,7 +20,7 @@
 <li>otp -123456</li>
 </ul>
 <span>Lawyer </span>
-<li>phn - 1111111111<li>
+<li>phn - 1111111111</li>
 <li>otp -123456</li>
 <h2><a href="https://drive.google.com/drive/folders/1VpJpV-G6gJN_Jnpiqk-yxXbNtMsWcJx5?usp=drive_link">link:NyayYatra</a></h2>
 </div>
@@ -35,12 +34,10 @@
 </ul>
 <h2><a href="https://nyaysanvad.netlify.app/">link:NyaySanvad</a></h2>
 </div>
-<br>
 <div>
 <h3>Awareness Website<i> Sadayev Satyamev</i> </h3> 
 <p>This website gathers all information about rights and assistance available online.</p>
 <h2><a href="https://creative-pudding-8f2c6e.netlify.app/">link:Sadayev Satyamev</a></h2>
 </div>
-<br>
 <h3>Demo Video Link</h3>
 <h2><a href="">link:</a></h2>
