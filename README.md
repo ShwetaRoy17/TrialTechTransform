@@ -13,6 +13,13 @@
 <p>"We split the solution into three parts:
 <br>
 <h3>>>Legal Connect </bApp<b> <i>NyayYatra</i></h3>: This app connects lawyers and people who need legal help (UTP). It lets you book appointments, get case updates, access legal resources, and offers rehabilitation support.
+<span>UTP
+phn - 8851259772
+otp -123456
+
+Lawyer 
+phn - 1111111111
+otp -123456</span>
 <h2><a href="https://drive.google.com/drive/folders/1VpJpV-G6gJN_Jnpiqk-yxXbNtMsWcJx5?usp=drive_link">link:NyayYatra</a></h2>
 <br>
 <br>
