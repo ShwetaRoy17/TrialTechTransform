@@ -12,19 +12,20 @@
 
 <p>"We split the solution into three parts:
 <br>
-<b>>>Legal Connect </bApp<b> <i>NyayYatra</i></b>: This app connects lawyers and people who need legal help (UTP). It lets you book appointments, get case updates, access legal resources, and offers rehabilitation support.
+<h3>>>Legal Connect </bApp<b> <i>NyayYatra</i></h3>: This app connects lawyers and people who need legal help (UTP). It lets you book appointments, get case updates, access legal resources, and offers rehabilitation support.
 <h2><a href="https://drive.google.com/drive/folders/1VpJpV-G6gJN_Jnpiqk-yxXbNtMsWcJx5?usp=drive_link">link:NyayYatra</a></h2>
 <br>
-<B>Dashboard</B> <i>NyaySanvad</i>: This tool helps authorities monitor and update the status of cases and services.
-<h2><a href="https://nyaysanvad.netlify.app/">link:NyaySanvad</a></h2>
+<h3>Dashboard <i>NyaySanvad</i></h3>: This tool helps authorities monitor and update the status of cases and services.
 <div>
-login as 
-admin
-user id:g01
+login as :
+admin, 
+user id:g01, 
 password:general123
 </div>
+<h2><a href="https://nyaysanvad.netlify.app/">link:NyaySanvad</a></h2>
+
 <br>
-<b>Awareness Website</b> <i>Sadayev Satyamev</i>: This website gathers all information about rights and assistance available online."
+<h3>Awareness Website<i> Sadayev Satyamev</i> </h3> : This website gathers all information about rights and assistance available online."
 <h2><a href="https://creative-pudding-8f2c6e.netlify.app/">link:Sadayev Satyamev</a></h2>
 </p>
 
