@@ -13,7 +13,7 @@
 <p>"We split the solution into three parts:
 <br>
 <b>>>Legal Connect </bApp<b> <i>NyayYatra</i></b>: This app connects lawyers and people who need legal help (UTP). It lets you book appointments, get case updates, access legal resources, and offers rehabilitation support.
-<h2><a href="">link:NyayYatra</a></h2>
+<h2><a href="https://drive.google.com/drive/folders/1VpJpV-G6gJN_Jnpiqk-yxXbNtMsWcJx5?usp=drive_link">link:NyayYatra</a></h2>
 <br>
 <B>Dashboard</B> <i>NyaySanvad</i>: This tool helps authorities monitor and update the status of cases and services.
 <h2><a href="https://nyaysanvad.netlify.app/">link:NyaySanvad</a></h2>
