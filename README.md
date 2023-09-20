@@ -15,6 +15,7 @@
 <h3>>>Legal Connect </bApp<b> <i>NyayYatra</i></h3>: This app connects lawyers and people who need legal help (UTP). It lets you book appointments, get case updates, access legal resources, and offers rehabilitation support.
 <h2><a href="https://drive.google.com/drive/folders/1VpJpV-G6gJN_Jnpiqk-yxXbNtMsWcJx5?usp=drive_link">link:NyayYatra</a></h2>
 <br>
+<br>
 <h3>Dashboard <i>NyaySanvad</i></h3>: This tool helps authorities monitor and update the status of cases and services.
 <div>
 login as :
@@ -23,11 +24,11 @@ user id:g01,
 password:general123
 </div>
 <h2><a href="https://nyaysanvad.netlify.app/">link:NyaySanvad</a></h2>
-
+<br>
 <br>
 <h3>Awareness Website<i> Sadayev Satyamev</i> </h3> : This website gathers all information about rights and assistance available online."
 <h2><a href="https://creative-pudding-8f2c6e.netlify.app/">link:Sadayev Satyamev</a></h2>
 </p>
-
+<br>
 <h3>Demo Video Link</h3>
 <h2><a href="">link:</a></h2>
