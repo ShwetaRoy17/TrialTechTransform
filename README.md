@@ -17,10 +17,12 @@
 <br>
 <B>Dashboard</B> <i>NyaySanvad</i>: This tool helps authorities monitor and update the status of cases and services.
 <h2><a href="https://nyaysanvad.netlify.app/">link:NyaySanvad</a></h2>
+<div>
 login as 
 admin
 user id:g01
 password:general123
+</div>
 <br>
 <b>Awareness Website</b> <i>Sadayev Satyamev</i>: This website gathers all information about rights and assistance available online."
 <h2><a href="https://creative-pudding-8f2c6e.netlify.app/">link:Sadayev Satyamev</a></h2>
