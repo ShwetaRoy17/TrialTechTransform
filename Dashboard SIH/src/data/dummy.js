@@ -17,6 +17,7 @@ import {
   BsShield,
   BsChatLeft,
 } from 'react-icons/bs';
+import  { BsFileEarmarkPdf } from 'react-icons/bs';
 import { IoMdContacts } from 'react-icons/io';
 import { MdOutlineSupervisorAccount } from 'react-icons/md';
 // import { HiOutlineRefresh } from 'react-icons/hi';
@@ -554,6 +555,10 @@ export const links1 = [
     title: 'Apps',
     links: [
       {
+        name: 'Add Files',
+        icon: <BsFileEarmarkPdf />,
+      },
+      {
         name: 'calendar',
         icon: <AiOutlineCalendar />,
       },
@@ -591,6 +596,10 @@ export const links2 = [
   {
     title: 'Apps',
     links: [
+      {
+        name: 'Add Files',
+        icon: <BsFileEarmarkPdf />,
+      },
       {
         name: 'calendar',
         icon: <AiOutlineCalendar />,
@@ -633,6 +642,10 @@ export const links3 = [
   {
     title: 'Apps',
     links: [
+      {
+        name: 'Add Files',
+        icon: <BsFileEarmarkPdf />,
+      },
       {
         name: 'calendar',
         icon: <AiOutlineCalendar />,
@@ -2603,7 +2616,7 @@ export const stackedCustomSeries = [
   { dataSource: stackedChartData[1],
     xName: 'x',
     yName: 'y',
-    name: 'Expense',
+    name: 'Monthly Wise Distribution',
     type: 'StackingColumn',
     background: 'red',
 
